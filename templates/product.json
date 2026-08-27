@@ -290,10 +290,46 @@
         "show_image_usps": true,
         "show_sticky_cta": true
       }
+    },
+    "hushly_ugc_family_iFt66e": {
+      "type": "hushly-ugc-family",
+      "blocks": {
+        "image_iDedDn": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_hqReqG": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_gj6Uqh": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_diw8Ki": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_iDedDn",
+        "image_hqReqG",
+        "image_gj6Uqh",
+        "image_diw8Ki"
+      ],
+      "name": "Hushly UGC Family",
+      "settings": {
+        "color_scheme": "lilac",
+        "eyebrow": "#hushlyfamilien",
+        "heading": "Vær en del af familien",
+        "intro": "Tag @hushly og vis din Hushly — bliv en del af de mange, der sover blødere.",
+        "speed": 55
+      }
     }
   },
   "order": [
     "main",
-    "main_product_Xabnbk"
+    "main_product_Xabnbk",
+    "hushly_ugc_family_iFt66e"
   ]
 }
