@@ -14,63 +14,152 @@
       "blocks": {
         "kicker": {
           "type": "kicker",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "hook": {
           "type": "hook",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "subtext": {
           "type": "subtext",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "badges": {
           "type": "badges",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_sale_price_first": true,
+            "show_installments": false,
+            "show_tax_info": false,
+            "type_preset": "",
+            "width": "100%",
+            "alignment": "left",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "text_color": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
         "usps": {
           "type": "usps",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "variant_picker": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "campaign": {
           "type": "campaign",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "shipping_message": {
           "type": "shipping_message",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "trust_row": {
           "type": "trust_row",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "delivery_features": {
           "type": "delivery_features",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "review_marquee": {
           "type": "review_marquee",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
         },
         "details": {
           "type": "details_block",
-          "settings": {}
+          "settings": {},
+          "blocks": {}
+        },
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "one",
+            "image_gap": 0,
+            "large_first_image": false,
+            "icons_style": "arrow",
+            "slideshow_controls_style": "dots",
+            "slideshow_mobile_controls_style": "dots",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 64,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": false,
+            "media_fit": "cover",
+            "media_radius": 4,
+            "extend_media": true,
+            "zoom": true,
+            "video_loop": false,
+            "hide_variants": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 12,
+            "sticky_details_desktop": false,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -90,10 +179,121 @@
         "review_marquee",
         "details"
       ],
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 16,
+        "enable_sticky_add_to_cart": true,
+        "background_color": "",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main_product_Xabnbk": {
+      "type": "main-product",
+      "blocks": {
+        "kicker_NxQ8Yi": {
+          "type": "kicker",
+          "settings": {
+            "text": "Nordisk søvn · designet til ro"
+          }
+        },
+        "title_p86WHj": {
+          "type": "title",
+          "settings": {}
+        },
+        "hook_zHqkGE": {
+          "type": "hook",
+          "settings": {
+            "text": "To sider. Én perfekt nat."
+          }
+        },
+        "badges_tUV3gm": {
+          "type": "badges",
+          "settings": {}
+        },
+        "usps_zUpQYX": {
+          "type": "usps",
+          "settings": {}
+        },
+        "price_YQ8mCk": {
+          "type": "price",
+          "settings": {}
+        },
+        "shipping_message_CAFiYR": {
+          "type": "shipping_message",
+          "settings": {
+            "cutoff": 14,
+            "default_text": "1-2 hverdages levering",
+            "today_text": "bestil inden for %t, så sender vi i dag"
+          }
+        },
+        "variant_picker_Pqccg4": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "buy_buttons_ktQPNX": {
+          "type": "buy_buttons",
+          "settings": {
+            "button_text": "Tilføj til kurv",
+            "show_secure_text": true
+          }
+        },
+        "trust_row_E4QjPg": {
+          "type": "trust_row",
+          "settings": {}
+        },
+        "campaign_WL6ihY": {
+          "type": "campaign",
+          "settings": {
+            "heading": "Kampagne: 2 betræk med, når du tager 2 puder",
+            "subtext": "Vælg selv farve til hver side af sengen"
+          }
+        },
+        "details_block_rEepMp": {
+          "type": "details_block",
+          "settings": {
+            "heading": "Om puden",
+            "content": "<p>Hushly PerfectPillow er bygget til at gøre din seng til husets roligste sted...</p>"
+          }
+        },
+        "delivery_features_LykbGf": {
+          "type": "delivery_features",
+          "settings": {}
+        },
+        "review_marquee_8ewJ9X": {
+          "type": "review_marquee",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "kicker_NxQ8Yi",
+        "title_p86WHj",
+        "hook_zHqkGE",
+        "badges_tUV3gm",
+        "usps_zUpQYX",
+        "price_YQ8mCk",
+        "shipping_message_CAFiYR",
+        "variant_picker_Pqccg4",
+        "buy_buttons_ktQPNX",
+        "trust_row_E4QjPg",
+        "campaign_WL6ihY",
+        "details_block_rEepMp",
+        "delivery_features_LykbGf",
+        "review_marquee_8ewJ9X"
+      ],
+      "name": "Main Product",
+      "settings": {
+        "show_image_usps": true,
+        "show_sticky_cta": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "main_product_Xabnbk"
   ]
 }
