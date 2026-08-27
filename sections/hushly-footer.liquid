@@ -1,0 +1,163 @@
+<footer class="hushly-footer scheme scheme--{{ section.settings.color_scheme }}">
+  <div class="container container--wide hushly-footer__inner">
+
+    <div class="hushly-footer__top">
+      <div class="hushly-footer__brand">
+        <a class="logo logo--lg" href="{{ routes.root_url }}" aria-label="{{ shop.name }} — gå til forsiden">
+          <span class="logo__word">{{ shop.name }}<span class="logo__dot" aria-hidden="true">.</span></span>
+        </a>
+
+        {%- if section.settings.tagline != blank -%}
+          <p class="hushly-footer__tagline">{{ section.settings.tagline }}</p>
+        {%- endif -%}
+        {%- if section.settings.blurb != blank -%}
+          <p class="hushly-footer__blurb">{{ section.settings.blurb }}</p>
+        {%- endif -%}
+      </div>
+
+      {%- if section.blocks.size > 0 -%}
+        <nav class="hushly-footer__cols" aria-label="Footer">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'link_list' -%}
+              <div class="hushly-footer__col" {{ block.shopify_attributes }}>
+                <h3 class="hushly-footer__col-title">{{ block.settings.title | default: linklists[block.settings.menu].title }}</h3>
+                <ul class="hushly-footer__links" role="list">
+                  {%- for link in linklists[block.settings.menu].links -%}
+                    <li><a class="hushly-footer__link" href="{{ link.url }}">{{ link.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </nav>
+      {%- endif -%}
+    </div>
+
+    <div class="hushly-footer__bottom">
+      {%- if section.settings.show_payments -%}
+        <div class="hushly-footer__pay" aria-label="Betalingsmetoder">
+          {%- unless shop.enabled_payment_types == empty -%}
+            {%- for type in shop.enabled_payment_types -%}
+              {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+            {%- endfor -%}
+          {%- else -%}
+            <!-- Fallbacks when in dev without Shopify Payments configured -->
+            {{ 'dankort' | payment_type_svg_tag }}
+            {{ 'visa' | payment_type_svg_tag }}
+            {{ 'master' | payment_type_svg_tag }}
+            {{ 'apple_pay' | payment_type_svg_tag }}
+            {{ 'mobilepay' | payment_type_svg_tag }}
+          {%- endunless -%}
+        </div>
+      {%- endif -%}
+      
+      <p class="hushly-footer__legal">
+        &copy; {{ 'now' | date: "%Y" }} {{ shop.name }}. {{ section.settings.copyright_text }}
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .hushly-footer { background: var(--sc-bg); color: var(--sc-text); }
+  .hushly-footer__inner { padding-block: var(--section-y); display: flex; flex-direction: column; gap: var(--space-12); }
+
+  /* Brand + columns */
+  .hushly-footer__top { display: grid; grid-template-columns: 1fr; gap: var(--space-12); }
+  .hushly-footer__brand { display: flex; flex-direction: column; gap: var(--space-3); max-width: 28rem; }
+  .hushly-footer__brand .logo { color: var(--sc-text); }
+  .hushly-footer__tagline { font-family: var(--font-display); font-weight: 500; font-size: var(--fs-h3); letter-spacing: -.01em; color: var(--sc-text, var(--ink)); margin: 0; }
+  .hushly-footer__blurb { color: var(--sc-muted, var(--muted)); line-height: var(--lh-body); margin: 0; }
+
+  .hushly-footer__cols { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-8) var(--space-6); }
+  .hushly-footer__col-title { font-family: var(--font-sans); font-size: var(--fs-sm); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--sc-text); margin-block-end: var(--space-3); margin-top: 0; }
+  .hushly-footer__links { display: flex; flex-direction: column; gap: var(--space-2); list-style: none; margin: 0; padding: 0; }
+  .hushly-footer__link { color: var(--sc-muted, var(--muted)); transition: color var(--dur) var(--ease); text-decoration: none; }
+  .hushly-footer__link:hover { color: var(--sc-accent, var(--accent)); }
+
+  .hushly-footer__bottom { display: flex; flex-direction: column; gap: var(--space-4); padding-block-start: var(--space-8); border-top: 1px solid var(--sc-border, var(--line)); }
+  .hushly-footer__pay { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .hushly-footer__pay svg { height: var(--pay-icon-h, 24px); width: auto; border-radius: var(--radius-sm); }
+  .hushly-footer__legal { font-size: var(--fs-sm); color: var(--sc-muted, var(--muted)); margin: 0; }
+
+  @media (min-width: 768px) {
+    .hushly-footer__top { grid-template-columns: 1.2fr 2fr; gap: var(--space-16); }
+    .hushly-footer__cols { grid-template-columns: repeat(4, 1fr); }
+    .hushly-footer__bottom { flex-direction: row; align-items: center; justify-content: space-between; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hushly Footer",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        { "value": "ink", "label": "Ink" },
+        { "value": "charcoal", "label": "Charcoal" },
+        { "value": "iris", "label": "Iris" },
+        { "value": "surface", "label": "Surface" }
+      ],
+      "default": "ink"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Sov blødere."
+    },
+    {
+      "type": "textarea",
+      "id": "blurb",
+      "label": "Brand Description",
+      "default": "Hushly er premium nordisk søvnkomfort. Kølende is-silke, blød bambus, ergonomisk memory foam og et strejf lavendel — designet i Danmark for ro og afslapning."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payments",
+      "label": "Show Payment Icons",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Additional Copyright Text",
+      "default": "Panthure ApS · CVR 45983331"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_list",
+      "name": "Menu Column",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading (Optional)",
+          "info": "Overrides the menu title"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hushly Footer",
+      "blocks": [
+        { "type": "link_list" },
+        { "type": "link_list" },
+        { "type": "link_list" },
+        { "type": "link_list" }
+      ]
+    }
+  ]
+}
+{% endschema %}

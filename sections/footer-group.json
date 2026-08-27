@@ -1,0 +1,79 @@
+{
+  "name": "t:names.footer",
+  "type": "footer",
+  "sections": {
+    "footer_trust": {
+      "type": "hushly-footer-trust",
+      "blocks": {
+        "trust_1": {
+          "type": "feature",
+          "settings": {
+            "title": "30 dages prøvetid",
+            "text": "Elsk den eller få pengene tilbage."
+          }
+        },
+        "trust_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Fri fragt",
+            "text": "På alle ordrer over 499 kr."
+          }
+        },
+        "trust_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Dansk design",
+            "text": "Udviklet og testet i Danmark."
+          }
+        },
+        "trust_4": {
+          "type": "feature",
+          "settings": {
+            "title": "Hurtig levering",
+            "text": "1-2 hverdage med GLS & dao."
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {}
+    },
+    "footer_newsletter": {
+      "type": "hushly-footer-newsletter",
+      "settings": {}
+    },
+    "footer": {
+      "type": "hushly-footer",
+      "blocks": {
+        "menu_1": {
+          "type": "menu",
+          "settings": {
+            "heading": "Shop",
+            "menu": "main-menu"
+          }
+        },
+        "menu_2": {
+          "type": "menu",
+          "settings": {
+            "heading": "Kundeservice",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "menu_1",
+        "menu_2"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "footer_trust",
+    "footer_newsletter",
+    "footer"
+  ]
+}

@@ -1,0 +1,343 @@
+<header class="hushly-header {% if section.settings.enable_sticky_header %}hushly-header--sticky{% endif %} is-scrolled" data-header="" data-sticky="{{ section.settings.enable_sticky_header }}">
+  <div class="container container--wide hushly-header__inner">
+    
+    <div class="hushly-header__col hushly-header__col--start">
+      <button type="button" class="hushly-header__icon-btn hushly-header__burger" data-drawer-open="menu" aria-controls="HushlyMenuDrawer" aria-expanded="false" aria-label="Åbn menu">
+        {% render 'icon', icon: 'menu' %}
+      </button>
+      
+      <nav class="hushly-header__nav" aria-label="Menu">
+        <ul role="list" class="hushly-header__menu">
+          {%- for link in linklists[section.settings.menu].links -%}
+            <li class="hushly-header__menu-item">
+              <a class="hushly-header__link" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="hushly-header__col hushly-header__col--center">
+      <a class="logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }} — gå til forsiden">
+        <span class="logo__word">{{ shop.name }}<span class="logo__dot" aria-hidden="true">.</span></span>
+      </a>
+    </div>
+    
+    <div class="hushly-header__col hushly-header__col--end">
+      {%- if shop.customer_accounts_enabled -%}
+        <a class="hushly-header__icon-btn hushly-header__account" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" aria-label="Min konto">
+          {% render 'icon', icon: 'account' %}
+        </a>
+      {%- endif -%}
+      
+      <a class="hushly-header__icon-btn hushly-header__cart" href="{{ routes.cart_url }}" data-drawer-open="cart" aria-controls="HushlyCartDrawer" aria-label="Varer i kurven" aria-expanded="false">
+        {% render 'icon', icon: 'cart' %}
+        <span class="hushly-header__cart-count {% if cart.item_count == 0 %}is-empty{% endif %}" data-cart-count="" aria-hidden="true">{{ cart.item_count }}</span>
+      </a>
+      
+      {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+        <a class="btn btn--primary btn--sm hushly-header__cta" href="{{ section.settings.button_link }}">
+          <span>{{ section.settings.button_label }}</span>
+        </a>
+      {%- endif -%}
+    </div>
+    
+  </div>
+</header>
+
+<!-- Mobile Menu Drawer -->
+<div class="hushly-drawer" data-drawer="menu" hidden="">
+  <div class="hushly-drawer__overlay" data-drawer-overlay="menu"></div>
+  <div class="hushly-drawer__panel" id="HushlyMenuDrawer" role="dialog" aria-modal="true" aria-label="Menu">
+    
+    <div class="hushly-drawer__head">
+      <a class="logo" href="{{ routes.root_url }}" aria-label="{{ shop.name }} — gå til forsiden">
+        <span class="logo__word">{{ shop.name }}<span class="logo__dot" aria-hidden="true">.</span></span>
+      </a>
+      <button type="button" class="hushly-header__icon-btn" data-drawer-close="menu" aria-label="Luk menu">
+        {% render 'icon', icon: 'close' %}
+      </button>
+    </div>
+
+    <div class="hushly-drawer__body">
+      {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+        <div class="hushly-drawer__cta">
+          <a class="btn btn--primary btn--lg btn--full" href="{{ section.settings.button_link }}">
+            <span>{{ section.settings.button_label }}</span>
+          </a>
+        </div>
+      {%- endif -%}
+      
+      <nav class="hushly-drawer__nav" aria-label="Menu">
+        <ul role="list" class="hushly-drawer__menu">
+          {%- for link in linklists[section.settings.menu].links -%}
+            <li class="hushly-drawer__menu-item">
+              <a class="hushly-drawer__link" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+                <span>{{ link.title }}</span>
+                {%- if link.links != blank -%}
+                  {% render 'icon', icon: 'chevron-down' %}
+                {%- else -%}
+                  {% render 'icon', icon: 'chevron-right' %}
+                {%- endif -%}
+              </a>
+              {%- if link.links != blank -%}
+                <ul role="list" class="hushly-drawer__sub">
+                  {%- for childlink in link.links -%}
+                    <li><a class="hushly-drawer__sublink" href="{{ childlink.url }}">{{ childlink.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hushly-drawer__foot">
+      <div class="hushly-drawer__foot-row">
+        {%- if shop.customer_accounts_enabled -%}
+          <a class="hushly-drawer__foot-link" href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
+            {% render 'icon', icon: 'account' %}
+            <span>Min konto</span>
+          </a>
+        {%- endif -%}
+        
+        <a class="hushly-drawer__foot-link" href="{{ routes.cart_url }}">
+          {% render 'icon', icon: 'cart' %}
+          <span>Kurv ({{ cart.item_count }})</span>
+        </a>
+      </div>
+      {%- if section.settings.drawer_note != blank -%}
+        <p class="hushly-drawer__note">{{ section.settings.drawer_note }}</p>
+      {%- endif -%}
+    </div>
+    
+  </div>
+</div>
+
+<style>
+  .hushly-header {
+    position: relative;
+    z-index: var(--z-header);
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    transition: box-shadow var(--dur) var(--ease);
+  }
+  .hushly-header--sticky { position: sticky; inset-block-start: 0; }
+  .hushly-header.is-scrolled { box-shadow: var(--shadow-sm); }
+
+  .hushly-header__inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: 4rem;
+    padding-block: var(--space-3);
+  }
+  .hushly-header__col { display: flex; align-items: center; min-width: 0; }
+  .hushly-header__col--center { justify-content: center; }
+  .hushly-header__col--end { justify-content: flex-end; gap: var(--space-1); }
+
+  /* Icon buttons */
+  .hushly-header__icon-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    height: var(--tap);
+    border-radius: var(--radius-pill);
+    color: var(--ink);
+    background: transparent;
+    transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+  .hushly-header__icon-btn:hover { background: var(--lavender-mist); color: var(--accent); }
+  .hushly-header__icon-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+  .hushly-header__icon-btn svg { width: 24px; height: 24px; }
+
+  /* Header CTA */
+  .hushly-header__cta { display: none; margin-inline-start: var(--space-2); white-space: nowrap; }
+
+  /* Desktop nav */
+  .hushly-header__nav { display: none; }
+  .hushly-header__menu { display: flex; align-items: center; gap: var(--space-6); list-style: none; margin: 0; padding: 0; }
+  .hushly-header__link {
+    position: relative;
+    color: var(--ink);
+    font-weight: 500;
+    padding-block: var(--space-2);
+    transition: color var(--dur) var(--ease);
+    text-decoration: none;
+  }
+  .hushly-header__link::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    height: var(--underline-h, 2px);
+    background: var(--accent);
+    border-radius: var(--radius-pill);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--dur) var(--ease);
+  }
+  .hushly-header__link:hover { color: var(--accent); }
+  .hushly-header__link:hover::after,
+  .hushly-header__link[aria-current="page"]::after { transform: scaleX(1); }
+  .hushly-header__link[aria-current="page"] { color: var(--accent); }
+
+  /* Account icon — desktop only (in drawer on mobile) */
+  .hushly-header__account { display: none; }
+
+  /* Cart badge */
+  .hushly-header__cart-count {
+    position: absolute;
+    inset-block-start: var(--space-1);
+    inset-inline-end: var(--space-1);
+    min-width: var(--badge-size, 18px);
+    height: var(--badge-size, 18px);
+    padding-inline: var(--space-1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--on-accent);
+    background: var(--accent);
+    border-radius: var(--radius-pill);
+  }
+  .hushly-header__cart-count.is-empty { display: none; }
+
+  /* Drawer */
+  .hushly-drawer { position: fixed; inset: 0; z-index: var(--z-drawer, 100); }
+  .hushly-drawer__overlay {
+    position: absolute; inset: 0;
+    background: var(--overlay, rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+  .hushly-drawer__panel {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    width: min(86vw, 22rem);
+    display: flex;
+    flex-direction: column;
+    background: var(--surface, #fff);
+    box-shadow: var(--shadow-lg);
+    transform: translateX(-100%);
+    transition: transform var(--dur) var(--ease);
+    overflow-y: auto;
+  }
+  .hushly-drawer.is-open .hushly-drawer__overlay { opacity: 1; }
+  .hushly-drawer.is-open .hushly-drawer__panel { transform: translateX(0); }
+  .hushly-drawer__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--line);
+  }
+  .hushly-drawer__body { flex: 1 1 auto; overflow-y: auto; display: flex; flex-direction: column; gap: var(--space-4); padding: var(--space-4) var(--space-6); }
+  .hushly-drawer__cta { margin-block-end: var(--space-2); }
+  .hushly-drawer__menu { display: flex; flex-direction: column; list-style: none; margin: 0; padding: 0; }
+  .hushly-drawer__menu-item { border-bottom: 1px solid var(--line); }
+  .hushly-drawer__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-1);
+    font-family: var(--font-display);
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    letter-spacing: -.01em;
+    color: var(--ink);
+    transition: color var(--dur) var(--ease);
+    text-decoration: none;
+  }
+  .hushly-drawer__link:hover { color: var(--accent); }
+  .hushly-drawer__link[aria-current="page"] { color: var(--accent); }
+  .hushly-drawer__link .icon { color: var(--accent-soft); width: 18px; height: 18px; }
+  .hushly-drawer__sub { display: flex; flex-direction: column; gap: var(--space-1); padding: 0 0 var(--space-3); list-style: none; margin: 0; }
+  .hushly-drawer__sublink { display: block; padding: var(--space-2) var(--space-1); color: var(--muted); text-decoration: none; }
+  .hushly-drawer__sublink:hover { color: var(--accent); }
+  .hushly-drawer__foot {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    border-top: 1px solid var(--line);
+  }
+  .hushly-drawer__foot-row { display: flex; gap: var(--space-6); }
+  .hushly-drawer__foot-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .hushly-drawer__foot-link:hover { color: var(--accent); }
+  .hushly-drawer__foot-link .icon { color: var(--accent); width: 18px; height: 18px; }
+  .hushly-drawer__note { font-size: var(--fs-sm); color: var(--muted); margin: 0; }
+
+  /* Tablet+ : show the buy CTA */
+  @media (min-width: 768px) {
+    .hushly-header__cta { display: inline-flex; }
+  }
+
+  /* Desktop layout */
+  @media (min-width: 1024px) {
+    .hushly-header__burger { display: none; }
+    .hushly-header__nav { display: block; }
+    .hushly-header__account { display: inline-flex; }
+    .hushly-drawer { display: none; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hushly Header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "label": "Enable Sticky Header",
+      "default": true
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Call to Action Label",
+      "default": "Køb puden"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Call to Action Link"
+    },
+    {
+      "type": "text",
+      "id": "drawer_note",
+      "label": "Mobile Drawer Note",
+      "default": "30 dages tilfredshedsgaranti · Fri fragt over 499 kr"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hushly Header"
+    }
+  ]
+}
+{% endschema %}

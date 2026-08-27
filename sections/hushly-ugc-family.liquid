@@ -1,0 +1,137 @@
+<section class="hushly-ugc scheme scheme--{{ section.settings.color_scheme }}">
+  <div class="container hushly-ugc__head" data-reveal="">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="eyebrow hushly-ugc__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="hushly-ugc__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.intro != blank -%}
+      <p class="hushly-ugc__intro">{{ section.settings.intro }}</p>
+    {%- endif -%}
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="hushly-ugc__marquee">
+      <div class="hushly-ugc__track" style="--ugc-speed: {{ section.settings.speed }}s">
+        {%- for i in (1..2) -%}
+          {%- for block in section.blocks -%}
+            <figure class="hushly-ugc__card" {% if i == 2 %}aria-hidden="true"{% else %}{{ block.shopify_attributes }}{% endif %}>
+              {%- if block.settings.image != blank -%}
+                <img src="{{ block.settings.image | image_url: width: 600 }}" 
+                     alt="{{ block.settings.image.alt | default: 'UGC Image' | escape }}" 
+                     srcset="{{ block.settings.image | image_url: width: 240 }} 240w, {{ block.settings.image | image_url: width: 300 }} 300w, {{ block.settings.image | image_url: width: 380 }} 380w, {{ block.settings.image | image_url: width: 480 }} 480w, {{ block.settings.image | image_url: width: 544 }} 544w, {{ block.settings.image | image_url: width: 600 }} 600w" 
+                     width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" 
+                     loading="lazy" class="hushly-ugc__img" 
+                     sizes="(min-width: 460px) 272px, 60vw">
+              {%- else -%}
+                <div class="hushly-ugc__img hushly-ugc__ph"></div>
+              {%- endif -%}
+            </figure>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+<style>
+  .hushly-ugc { background: var(--sc-bg); color: var(--sc-text); }
+  .hushly-ugc__head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-3); padding-block: var(--section-y) 0; max-width: var(--maxw-lead); margin-inline: auto; }
+  .hushly-ugc__eyebrow { color: var(--sc-accent, var(--accent)); margin: 0; }
+  .hushly-ugc__heading { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h2); letter-spacing: -.02em; color: var(--sc-text, var(--ink)); margin: 0; }
+  .hushly-ugc__intro { font-size: var(--fs-lead); line-height: var(--lh-body); color: var(--sc-muted, var(--muted)); margin: 0; }
+  
+  .hushly-ugc__marquee { overflow: hidden; padding-block: var(--section-y); -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+  .hushly-ugc__track { display: flex; gap: var(--space-4); width: max-content; animation: hushly-ugc-scroll var(--ugc-speed, 55s) linear infinite; }
+  .hushly-ugc__marquee:hover .hushly-ugc__track, .hushly-ugc__marquee:focus-within .hushly-ugc__track { animation-play-state: paused; }
+  .hushly-ugc__card { flex: none; width: 60vw; max-width: 17rem; margin: 0; position: relative; border-radius: var(--radius); overflow: hidden; background: var(--sc-chip, var(--lavender-mist)); box-shadow: var(--shadow-sm); aspect-ratio: 3 / 4; }
+  .hushly-ugc__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hushly-ugc__ph { display: block; width: 100%; height: 100%; background: linear-gradient(135deg, var(--lilac), var(--accent-soft)); }
+
+  @media (min-width: 768px) {
+    .hushly-ugc__card { width: 17rem; }
+  }
+
+  @keyframes hushly-ugc-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hushly-ugc__marquee { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .hushly-ugc__track { animation: none; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hushly UGC Family",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        { "value": "mist", "label": "Mist" },
+        { "value": "cloud", "label": "Cloud" },
+        { "value": "lilac", "label": "Lilac" },
+        { "value": "surface", "label": "Surface" }
+      ],
+      "default": "lilac"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "#hushlyfamilien"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Vær en del af familien"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro Text",
+      "default": "Tag @hushly og vis din Hushly — bliv en del af de mange, der sover blødere."
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "s",
+      "label": "Scroll Speed",
+      "default": 55
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "UGC Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hushly UGC Family",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}

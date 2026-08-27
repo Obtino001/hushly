@@ -1,0 +1,45 @@
+{
+  "name": "t:names.header",
+  "type": "header",
+  "sections": {
+    "announcement_bar": {
+      "type": "hushly-announcement-bar",
+      "blocks": {
+        "msg_1": {
+          "type": "message",
+          "settings": {
+            "text": "Fri fragt over 499 kr"
+          }
+        },
+        "msg_2": {
+          "type": "message",
+          "settings": {
+            "text": "30 dages tilfredshedsgaranti"
+          }
+        },
+        "msg_3": {
+          "type": "message",
+          "settings": {
+            "text": "Hurtig levering 1-2 hverdage"
+          }
+        }
+      },
+      "block_order": [
+        "msg_1",
+        "msg_2",
+        "msg_3"
+      ],
+      "settings": {}
+    },
+    "header": {
+      "type": "hushly-header",
+      "settings": {
+        "menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "announcement_bar",
+    "header"
+  ]
+}

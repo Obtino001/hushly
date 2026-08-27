@@ -1,0 +1,143 @@
+<section class="hushly-marquee hushly-marquee--{{ section.settings.color_scheme }} is-revealed" aria-label="Fordele" data-reveal="" style="--marquee-duration: {{ section.settings.speed }}s">
+  <div class="hushly-marquee__track">
+    {%- for i in (1..3) -%}
+      <ul class="hushly-marquee__group" role="list" {% if forloop.index > 1 %}aria-hidden="true"{% endif %}>
+        {%- for block in section.blocks -%}
+          <li class="hushly-marquee__item" {{ block.shopify_attributes }}>
+            {%- if block.settings.icon != 'none' -%}
+              <span class="hushly-marquee__icon">
+                {% render 'icon', icon: block.settings.icon %}
+              </span>
+            {%- endif -%}
+            <span>{{ block.settings.text }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endfor -%}
+  </div>
+</section>
+
+<style>
+  .hushly-marquee {
+    --m-bg: var(--ink);
+    background: var(--m-bg);
+    color: var(--on-dark);
+    overflow: hidden;
+  }
+  .hushly-marquee--ink { --m-bg: var(--ink); }
+  .hushly-marquee--charcoal { --m-bg: var(--charcoal); }
+  .hushly-marquee--iris { --m-bg: var(--accent); }
+  .hushly-marquee--cloud { --m-bg: var(--surface); color: var(--ink); }
+
+  .hushly-marquee__track {
+    display: flex;
+    width: max-content;
+    animation: hushly-marquee var(--marquee-duration, 30s) linear infinite;
+  }
+  .hushly-marquee:hover .hushly-marquee__track,
+  .hushly-marquee:focus-within .hushly-marquee__track { animation-play-state: paused; }
+
+  .hushly-marquee__group { display: flex; align-items: center; flex: none; margin: 0; padding: 0; }
+  .hushly-marquee__item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding-block: var(--space-4);
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .hushly-marquee__item::after {
+    content: "·";
+    color: var(--accent-soft);
+    font-weight: 600;
+    margin-inline: var(--space-6);
+  }
+  .hushly-marquee__icon { display: inline-flex; color: var(--accent-soft); }
+  .hushly-marquee__icon svg { width: 20px; height: 20px; }
+
+  @keyframes hushly-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.3333%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hushly-marquee { overflow-x: auto; }
+    .hushly-marquee__track { animation: none; }
+    .hushly-marquee__group:not(:first-child) { display: none; }
+    .hushly-marquee__group:first-child .hushly-marquee__item:last-child::after { content: none; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hushly Marquee",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Background Color",
+      "options": [
+        { "value": "ink", "label": "Ink (Dark Blue)" },
+        { "value": "charcoal", "label": "Charcoal" },
+        { "value": "iris", "label": "Iris (Accent)" },
+        { "value": "cloud", "label": "Cloud (Light)" }
+      ],
+      "default": "ink"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "s",
+      "label": "Scroll Speed",
+      "default": 30
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon (Snippet Name)",
+          "default": "snow",
+          "info": "Snippet name e.g., 'snow', 'moon', 'leaf', 'truck'. Leave 'none' to hide."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Benefit text here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hushly Marquee",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": { "icon": "snow", "text": "Kølende is-silke" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "icon": "moon", "text": "Ergonomisk memory foam" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "icon": "leaf", "text": "Beroligende lavendel" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "icon": "truck", "text": "Fri fragt over 499 kr" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,319 @@
+<section class="hushly-compare scheme scheme--{{ section.settings.color_scheme }} hushly-compare--media-{{ section.settings.image_position }}">
+  <div class="container container--wide hushly-compare__inner">
+    <div class="hushly-compare__media" data-reveal="">
+      {%- if section.settings.image != blank -%}
+        <img src="{{ section.settings.image | image_url: width: 1200 }}" 
+             alt="{{ section.settings.heading | escape }}" 
+             srcset="{{ section.settings.image | image_url: width: 340 }} 340w, {{ section.settings.image | image_url: width: 544 }} 544w, {{ section.settings.image | image_url: width: 720 }} 720w, {{ section.settings.image | image_url: width: 1088 }} 1088w, {{ section.settings.image | image_url: width: 1200 }} 1200w" 
+             width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" 
+             loading="lazy" class="hushly-compare__img" 
+             sizes="(min-width: 1580px) 720px, (min-width: 1024px) 44vw, (min-width: 620px) 544px, calc(100vw - 2rem)">
+      {%- else -%}
+        <div class="hushly-compare__placeholder"></div>
+      {%- endif -%}
+    </div>
+
+    <div class="hushly-compare__content" data-reveal="" style="--reveal-delay: calc(var(--reveal-step) * 1.5)">
+      <div class="hushly-compare__head">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="eyebrow hushly-compare__eyebrow">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="hushly-compare__heading">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.intro != blank -%}
+          <p class="hushly-compare__intro">{{ section.settings.intro }}</p>
+        {%- endif -%}
+      </div>
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="hushly-compare__table" role="table" aria-label="{{ section.settings.heading | escape }}">
+          <div class="hushly-compare__row hushly-compare__row--header" role="row">
+            <span class="hushly-compare__feature hushly-compare__feature--head" role="columnheader"></span>
+            <span class="hushly-compare__col hushly-compare__col--hushly hushly-compare__col--head" role="columnheader">
+              <span class="hushly-compare__brand">{{ section.settings.brand_1 }}<span class="hushly-compare__brand-dot" aria-hidden="true">.</span></span>
+            </span>
+            <span class="hushly-compare__col hushly-compare__col--head hushly-compare__col--muted" role="columnheader">
+              {{ section.settings.brand_2 }}
+            </span>
+          </div>
+          
+          {%- for block in section.blocks -%}
+            <div class="hushly-compare__row" role="row" style="--reveal-delay: calc(var(--reveal-step) * {{ forloop.index0 }})" {{ block.shopify_attributes }}>
+              <span class="hushly-compare__feature" role="cell">{{ block.settings.title }}</span>
+
+              <span class="hushly-compare__col hushly-compare__col--hushly" role="cell">
+                {%- if block.settings.hushly_has -%}
+                  <span class="hushly-compare__yes" aria-label="{{ section.settings.brand_1 }}: ja">
+                    {% render 'icon', icon: 'check' %}
+                  </span>
+                {%- else -%}
+                  <span class="hushly-compare__no" aria-label="{{ section.settings.brand_1 }}: nej">
+                    {% render 'icon', icon: 'minus' %}
+                  </span>
+                {%- endif -%}
+              </span>
+
+              <span class="hushly-compare__col hushly-compare__col--muted" role="cell">
+                {%- if block.settings.other_has -%}
+                  <span class="hushly-compare__yes hushly-compare__yes--plain" aria-label="{{ section.settings.brand_2 }}: ja">
+                    {% render 'icon', icon: 'check' %}
+                  </span>
+                {%- else -%}
+                  <span class="hushly-compare__no" aria-label="{{ section.settings.brand_2 }}: nej">
+                    {% render 'icon', icon: 'minus' %}
+                  </span>
+                {%- endif -%}
+              </span>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hushly-compare__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    padding-block: var(--section-y);
+    align-items: center;
+  }
+  .hushly-compare__media {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--sc-soft, var(--lilac));
+    aspect-ratio: 4 / 5;
+    max-width: var(--maxw-panel);
+    width: 100%;
+    margin-inline: auto;
+  }
+  .hushly-compare__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hushly-compare__placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, var(--lilac), var(--accent-soft)); }
+
+  .hushly-compare__content { display: flex; flex-direction: column; align-items: center; gap: var(--space-6); width: 100%; }
+  .hushly-compare__head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-3); max-width: var(--maxw-lead); }
+  .hushly-compare__eyebrow { color: var(--sc-accent, var(--accent)); margin: 0; }
+  .hushly-compare__heading { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h2); letter-spacing: -.02em; color: var(--sc-text, var(--ink)); margin: 0; }
+  .hushly-compare__intro { font-size: var(--fs-lead); line-height: var(--lh-body); color: var(--sc-muted, var(--muted)); margin: 0; }
+
+  .hushly-compare__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--sc-border, var(--line));
+    border-radius: var(--radius-lg);
+    background: var(--sc-bg, var(--surface));
+    overflow: hidden;
+  }
+  .hushly-compare__row {
+    display: grid;
+    grid-template-columns: 1fr 4.5rem 4.5rem;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-3);
+    border-block-start: 1px solid var(--sc-border, var(--line));
+  }
+  .hushly-compare__row:first-child { border-block-start: 0; }
+  .hushly-compare__row--header { padding-block: var(--space-3); }
+
+  .hushly-compare__feature {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-body);
+    color: var(--sc-text, var(--ink));
+    padding-inline-start: var(--space-1);
+    min-width: 0;
+  }
+  .hushly-compare__feature--head { min-height: var(--space-2); }
+
+  .hushly-compare__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hushly-compare__col--head {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    letter-spacing: -.01em;
+    line-height: var(--lh-tight);
+  }
+  .hushly-compare__col--hushly.hushly-compare__col--head { color: var(--sc-accent, var(--accent)); }
+  .hushly-compare__brand { font-family: var(--font-display); font-weight: 500; letter-spacing: -.02em; color: var(--sc-text, var(--ink)); }
+  .hushly-compare__brand-dot { color: var(--accent-soft); }
+  .hushly-compare__col--muted { color: var(--sc-muted, var(--muted)); }
+
+  /* Highlight the Hushly column as a continuous band */
+  .hushly-compare__col--hushly {
+    position: relative;
+    align-self: stretch;
+    margin-block: calc(-1 * var(--space-3));
+    padding-block: var(--space-3);
+    background: var(--sc-soft, var(--lavender-mist));
+    border-inline: 1px solid var(--sc-accent, var(--accent));
+  }
+  .hushly-compare__row:first-child .hushly-compare__col--hushly {
+    border-block-start: 1px solid var(--sc-accent, var(--accent));
+    border-start-start-radius: var(--radius);
+    border-start-end-radius: var(--radius);
+  }
+  .hushly-compare__row:last-child .hushly-compare__col--hushly {
+    border-block-end: 1px solid var(--sc-accent, var(--accent));
+    border-end-start-radius: var(--radius);
+    border-end-end-radius: var(--radius);
+  }
+
+  .hushly-compare__yes {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-8, 32px);
+    height: var(--space-8, 32px);
+    border-radius: var(--radius-pill);
+    background: var(--sc-accent, var(--accent));
+    color: var(--on-accent);
+  }
+  .hushly-compare__yes--plain {
+    background: var(--sc-chip, var(--lavender-mist));
+    color: var(--sc-accent, var(--accent));
+  }
+  .hushly-compare__no {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-8, 32px);
+    height: var(--space-8, 32px);
+    color: var(--sc-muted, var(--muted));
+    opacity: .6;
+  }
+  .hushly-compare__yes svg,
+  .hushly-compare__no svg { stroke-width: 2.25; width: 18px; height: 18px; }
+
+  @media (min-width: 768px) {
+    .hushly-compare__row { grid-template-columns: 1fr 9rem 9rem; padding: var(--space-4) var(--space-6); gap: var(--space-4); }
+    .hushly-compare__row--header { padding-block: var(--space-4); }
+    .hushly-compare__feature { font-size: var(--fs-body); padding-inline-start: var(--space-2); }
+    .hushly-compare__col--head { font-size: var(--fs-h3); }
+    .hushly-compare__col--hushly { margin-block: calc(-1 * var(--space-4)); padding-block: var(--space-4); }
+  }
+
+  @media (min-width: 1024px) {
+    .hushly-compare__inner { grid-template-columns: 1fr 1fr; gap: var(--space-16); }
+    .hushly-compare__media { max-width: none; position: sticky; inset-block-start: calc(var(--header-height, 0px) + var(--space-6)); }
+    .hushly-compare--media-right .hushly-compare__media { order: 2; }
+    .hushly-compare__content { align-items: flex-start; }
+    .hushly-compare__head { align-items: flex-start; text-align: start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hushly-compare__row { --reveal-delay: 0s; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hushly Comparison",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        { "value": "mist", "label": "Mist" },
+        { "value": "cloud", "label": "Cloud" },
+        { "value": "lilac", "label": "Lilac" },
+        { "value": "surface", "label": "Surface" }
+      ],
+      "default": "mist"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position (Desktop)",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "Se forskellen"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hushly vs. en almindelig pude"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro Text",
+      "default": "Det, der gør forskellen om natten, er sjældent det, du ser om dagen..."
+    },
+    {
+      "type": "header",
+      "content": "Table Columns"
+    },
+    {
+      "type": "text",
+      "id": "brand_1",
+      "label": "Brand 1 (Highlight)",
+      "default": "Hushly"
+    },
+    {
+      "type": "text",
+      "id": "brand_2",
+      "label": "Brand 2",
+      "default": "Almindelig pude"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Feature Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Name",
+          "default": "Kølende overflade"
+        },
+        {
+          "type": "checkbox",
+          "id": "hushly_has",
+          "label": "Brand 1 has feature?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "other_has",
+          "label": "Brand 2 has feature?",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hushly Comparison",
+      "blocks": [
+        { "type": "row", "settings": { "title": "Kølende is-silke-overflade", "hushly_has": true, "other_has": false } },
+        { "type": "row", "settings": { "title": "2-i-1 vendbar", "hushly_has": true, "other_has": false } },
+        { "type": "row", "settings": { "title": "Justérbart fyld", "hushly_has": true, "other_has": false } }
+      ]
+    }
+  ]
+}
+{% endschema %}
