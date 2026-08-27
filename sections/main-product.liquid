@@ -1,323 +1,309 @@
-<div class="hushly-pdp" data-hushly-product="" data-hp-ready="true">
+<div id="shopify-section-template--31027896779100__main" class="shopify-section"><div class="hushly-pdp" data-hushly-product="" data-hp-ready="true">
   <div class="hushly-pdp__product">
-    <div class="hushly-pdp__grid">
-      
-      <!-- GALLERY -->
-      <div class="gallery" data-hp-gallery="">
-        <div class="main main--carousel">
-          <div class="mainscroll" data-hp-mainscroll="">
-            {%- for media in product.media -%}
-              <div class="mainslide {% if forloop.first %}is-active{% endif %}" data-hp-slide="">
-                {{ media | image_url: width: 1200 | image_tag: loading: 'eager', class: 'main-img', sizes: '(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw' }}
-                {%- if section.settings.show_image_usps -%}
-                  <div class="slide-usps">
-                    {%- if forloop.index == 1 -%}
-                      <span class="su">{% render 'icon', icon: 'leaf' %} Et strejf lavendel</span>
-                      <span class="su">{% render 'icon', icon: 'moon' %} Ro før sengetid</span>
-                    {%- elsif forloop.index == 2 -%}
-                      <span class="su">{% render 'icon', icon: 'snow' %} Kølende is-silke</span>
-                      <span class="su">{% render 'icon', icon: 'check' %} Sval ved berøring</span>
-                    {%- elsif forloop.index == 3 -%}
-                      <span class="su">{% render 'icon', icon: 'shield' %} Ergonomisk memory foam</span>
-                      <span class="su">{% render 'icon', icon: 'check' %} Trykaflastende støtte</span>
-                    {%- elsif forloop.index == 4 -%}
-                      <span class="su">{% render 'icon', icon: 'heart' %} Premium dansk design</span>
-                      <span class="su">{% render 'icon', icon: 'moon' %} 30 dages tilfredshedsgaranti</span>
-                    {%- elsif forloop.index == 5 -%}
-                      <span class="su">{% render 'icon', icon: 'snow' %} Sov køligt hele natten</span>
-                      <span class="su">{% render 'icon', icon: 'check' %} Ingen klamme zoner</span>
-                    {%- elsif forloop.index == 6 -%}
-                      <span class="su">{% render 'icon', icon: 'heart' %} Blød & luksuriøs</span>
-                      <span class="su">{% render 'icon', icon: 'shield' %} Holder formen</span>
-                    {%- elsif forloop.index == 7 -%}
-                      <span class="su">{% render 'icon', icon: 'shield' %} Vågn uden nakkesmerter</span>
-                      <span class="su">{% render 'icon', icon: 'moon' %} Alle sovestillinger</span>
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-              </div>
-            {%- endfor -%}
-            
-            {%- if product.media.size == 0 -%}
-               <div class="mainslide is-active" data-hp-slide="">
-                 {{ 'product-1' | placeholder_svg_tag: 'main-img' }}
-               </div>
-            {%- endif -%}
-          </div>
-          
-          <div class="mainaddon" data-hp-addon-img="" hidden="">
-            <div class="mainaddon__slide is-active" data-hp-addon-slide="" data-variant-id="58163201114460">
-              <img src="//hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&width=1200" alt="Hushly Kølende Betræk" width="1200" height="1200" loading="lazy" class="main-img">
-            </div>
-            <div class="mainaddon__slide" data-hp-addon-slide="" data-variant-id="58144876298588">
-              <img src="//hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&width=1200" alt="Hushly Kølende Betræk" width="1200" height="1200" loading="lazy" class="main-img">
-            </div>
-          </div>
+    <div class="hushly-pdp__grid"><div class="gallery" data-hp-gallery="">
+        <div class="main main--carousel"><div class="mainscroll" data-hp-mainscroll=""><div class="mainslide is-active" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=1200" alt="Hushly PerfectPillow – kølende memory-foam pude set forfra" srcset="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=340 340w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=420 420w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=540 540w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=660 660w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=780 780w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=960 960w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=1200 1200w" width="1200" height="1200" loading="eager" fetchpriority="high" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--leaf " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M5 19c0-7.5 5.5-13 14-13 0 9-5.5 14-14 13Z"></path><path d="M9 15c2-2.5 4.5-4 8-5"></path></svg>
+Et strejf lavendel</span><span class="su">
+<svg class="icon icon--moon " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8 8 0 1 1 10 4 6.5 6.5 0 0 0 20.5 14.5Z"></path></svg>
+Ro før sengetid</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=1200" alt="Kølende is-silke-side på Hushly memory-foam pude i nærbillede" srcset="//hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=340 340w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=420 420w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=540 540w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=660 660w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=780 780w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=960 960w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--snow " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><line x1="12" y1="3" x2="12" y2="21"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="5.6" y1="5.6" x2="18.4" y2="18.4"></line><line x1="18.4" y1="5.6" x2="5.6" y2="18.4"></line></svg>
+Kølende is-silke</span><span class="su">
+<svg class="icon icon--check " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><polyline points="4 12 9.5 17.5 20 6"></polyline></svg>
+Sval ved berøring</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=1200" alt="Hushly pude med ergonomisk memory-foam kerne til nakkestøtte" srcset="//hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=340 340w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=420 420w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=540 540w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=660 660w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=780 780w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=960 960w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--shield " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.2-7 8-4-.8-7-3.4-7-8V6l7-3Z"></path><polyline points="9 12 11 14 15 9.5"></polyline></svg>
+Ergonomisk memory foam</span><span class="su">
+<svg class="icon icon--check " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><polyline points="4 12 9.5 17.5 20 6"></polyline></svg>
+Trykaflastende støtte</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=1200" alt="Hushly kølende pude på en opredt seng i et roligt soveværelse" srcset="//hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=340 340w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=420 420w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=540 540w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=660 660w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=780 780w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=960 960w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--heart " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-9.4a3.8 3.8 0 0 1 7-2.1 3.8 3.8 0 0 1 7 2.1c0 5-7 9.4-7 9.4Z"></path></svg>
+Premium dansk design</span><span class="su">
+<svg class="icon icon--moon " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8 8 0 1 1 10 4 6.5 6.5 0 0 0 20.5 14.5Z"></path></svg>
+30 dages tilfredshedsgaranti</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=1200" alt="Hushly PerfectPillow – kølende pude med et strejf lavendel" srcset="//hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=340 340w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=420 420w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=540 540w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=660 660w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=780 780w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=960 960w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--snow " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><line x1="12" y1="3" x2="12" y2="21"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="5.6" y1="5.6" x2="18.4" y2="18.4"></line><line x1="18.4" y1="5.6" x2="5.6" y2="18.4"></line></svg>
+Sov køligt hele natten</span><span class="su">
+<svg class="icon icon--check " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><polyline points="4 12 9.5 17.5 20 6"></polyline></svg>
+Ingen klamme zoner</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=1200" alt="Kvinde holder Hushly PerfectPillow kølende pude i et lyst soveværelse" srcset="//hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=340 340w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=420 420w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=540 540w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=660 660w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=780 780w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=960 960w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--heart " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-9.4a3.8 3.8 0 0 1 7-2.1 3.8 3.8 0 0 1 7 2.1c0 5-7 9.4-7 9.4Z"></path></svg>
+Blød &amp; luksuriøs</span><span class="su">
+<svg class="icon icon--shield " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.2-7 8-4-.8-7-3.4-7-8V6l7-3Z"></path><polyline points="9 12 11 14 15 9.5"></polyline></svg>
+Holder formen</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=1200" alt="Hushly PerfectPillow kølende memory-foam pude i brug" srcset="//hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=340 340w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=420 420w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=540 540w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=660 660w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=780 780w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=960 960w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+<div class="slide-usps">
+                      <span class="su">
+<svg class="icon icon--shield " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5c0 4.6-3 7.2-7 8-4-.8-7-3.4-7-8V6l7-3Z"></path><polyline points="9 12 11 14 15 9.5"></polyline></svg>
+Vågn uden nakkesmerter</span><span class="su">
+<svg class="icon icon--moon " viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false"><path d="M20.5 14.5A8 8 0 1 1 10 4 6.5 6.5 0 0 0 20.5 14.5Z"></path></svg>
+Alle sovestillinger</span></div></div><div class="mainslide" data-hp-slide=""><img src="//hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=1200" alt="Hushly – PerfectPillow" srcset="//hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=340 340w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=420 420w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=540 540w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=660 660w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=780 780w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=960 960w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+</div></div><div class="mainaddon" data-hp-addon-img=""><div class="mainaddon__slide is-active" data-hp-addon-slide="" data-variant-id="58163201114460"><img src="//hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=1200" alt="Hushly Kølende Betræk" srcset="//hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=340 340w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=420 420w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=540 540w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=660 660w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=780 780w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=960 960w, //hushly.dk/cdn/shop/files/1xbetraek_3dfadadc-7e30-47aa-90f8-dbaf84385606.png?v=1782810060&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+</div><div class="mainaddon__slide" data-hp-addon-slide="" data-variant-id="58144876298588"><img src="//hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=1200" alt="Hushly Kølende Betræk" srcset="//hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=340 340w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=420 420w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=540 540w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=660 660w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=780 780w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=960 960w, //hushly.dk/cdn/shop/files/30._jun._2026_11.00.53.png?v=1782810052&amp;width=1200 1200w" width="1200" height="1200" loading="lazy" fetchpriority="low" class="main-img" sizes="(min-width: 1580px) 715px, (min-width: 860px) 46vw, 79vw">
+</div></div></div>
+
+        <div class="thumbs"><button type="button" class="thumb active" data-hp-thumb="" data-index="0" aria-label="Vis billede 1"><img src="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=200" alt="Hushly PerfectPillow – kølende memory-foam pude set forfra" srcset="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=60 60w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=120 120w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="1" aria-label="Vis billede 2"><img src="//hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=200" alt="Kølende is-silke-side på Hushly memory-foam pude i nærbillede" srcset="//hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=60 60w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=120 120w, //hushly.dk/cdn/shop/files/0033.jpg?v=1782474621&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="2" aria-label="Vis billede 3"><img src="//hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=200" alt="Hushly pude med ergonomisk memory-foam kerne til nakkestøtte" srcset="//hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=60 60w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=120 120w, //hushly.dk/cdn/shop/files/Pillow_-_back.jpg?v=1782474596&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="3" aria-label="Vis billede 4"><img src="//hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=200" alt="Hushly kølende pude på en opredt seng i et roligt soveværelse" srcset="//hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=60 60w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=120 120w, //hushly.dk/cdn/shop/files/VID03768.jpg?v=1782474596&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="4" aria-label="Vis billede 5"><img src="//hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=200" alt="Hushly PerfectPillow – kølende pude med et strejf lavendel" srcset="//hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=60 60w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=120 120w, //hushly.dk/cdn/shop/files/VID03748.jpg?v=1782474596&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="5" aria-label="Vis billede 6"><img src="//hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=200" alt="Kvinde holder Hushly PerfectPillow kølende pude i et lyst soveværelse" srcset="//hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=60 60w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=120 120w, //hushly.dk/cdn/shop/files/VID03675.jpg?v=1782474598&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="6" aria-label="Vis billede 7"><img src="//hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=200" alt="Hushly PerfectPillow kølende memory-foam pude i brug" srcset="//hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=60 60w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=120 120w, //hushly.dk/cdn/shop/files/VID03752.jpg?v=1782474619&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button><button type="button" class="thumb" data-hp-thumb="" data-index="7" aria-label="Vis billede 8"><img src="//hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=200" alt="Hushly – PerfectPillow" srcset="//hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=60 60w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=120 120w, //hushly.dk/cdn/shop/files/perfectpillow.png?v=1782631476&amp;width=180 180w" width="200" height="200" loading="lazy" fetchpriority="low" class="thumb-img" sizes="60px">
+              </button></div>
+      </div><form class="buybox" data-hp-form="" action="/cart/add" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="58144875970908" data-hp-variant="">
+        <input type="hidden" name="quantity" value="2" data-hp-qty=""><input type="hidden" data-hp-addon="" value="58163201114460"><input type="hidden" data-hp-addon2="" value="58163201114460"><div class="kicker"><span class="wm">Hushly<span class="pd">.</span></span><span class="kd"></span>Nordisk søvn · designet til ro
         </div>
 
-        <div class="thumbs">
-          {%- for media in product.media -%}
-            <button type="button" class="thumb {% if forloop.first %}active{% endif %}" data-hp-thumb="" data-index="{{ forloop.index0 }}" aria-label="Vis billede {{ forloop.index }}">
-              {{ media | image_url: width: 200 | image_tag: loading: 'lazy', class: 'thumb-img', sizes: '60px' }}
-            </button>
-          {%- endfor -%}
-        </div>
-      </div>
-      
-      <!-- BUY BOX -->
-      {%- assign product_form_id = 'product-form-' | append: section.id -%}
-      
-      {% form 'product', product, class: 'buybox', data-hp-form: '', id: product_form_id, novalidate: 'novalidate' %}
-        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" data-hp-variant="">
-        <input type="hidden" name="quantity" value="1" data-hp-qty="">
-        <input type="hidden" data-hp-addon="" value="58163201114460">
-        <input type="hidden" data-hp-addon2="" value="58163201114460">
-
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when '@app' -%}
-              {% render block %}
-            
-            {%- when 'kicker' -%}
-              <div class="kicker" {{ block.shopify_attributes }}>
-                <span class="wm">{{ shop.name }}<span class="pd">.</span></span>
-                <span class="kd"></span>{{ block.settings.text }}
-              </div>
-
-            {%- when 'title' -%}
-              <h1 class="title" {{ block.shopify_attributes }}>{{ product.title | escape }}<span class="tm">™</span></h1>
-
-            {%- when 'hook' -%}
-              <p class="hook" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-
-            {%- when 'subtext' -%}
-              <p class="sub" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-
-            {%- when 'badges' -%}
-              <div class="sides" aria-label="To sider i én pude" {{ block.shopify_attributes }}>
-                <span class="sbadge sbadge--cool">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 2v20M5 7l14 10M19 7 5 17M2.5 12h19"></path></svg>
-                  Kølende is-silke
-                </span>
-                <span class="sides-mid">2-i-1 vendbar</span>
-                <span class="sbadge sbadge--lav">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 21c8.5 0 14-5.5 14-14 0 0-3.2 1-6.5 1C7 8 4 11 4 16.5c0 1.6 0 3.2 1 4.5Z"></path><path d="M5 21c1-5.5 4.2-8.7 8.5-10.5"></path></svg>
-                  Lavendelduft
-                </span>
-              </div>
-
-            {%- when 'price' -%}
-              <div class="price" {{ block.shopify_attributes }}>
-                <span class="now" data-hp-now="">{{ product.selected_or_first_available_variant.price | money }}</span>
-                {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-                  <span class="was" data-hp-was="">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
-                  <span class="save" data-hp-save="">Spar {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}</span>
-                {%- endif -%}
-              </div>
-
-            {%- when 'usps' -%}
-              <div class="usps" style="--usp-icon: 34px; --usp-box: 38px" {{ block.shopify_attributes }}>
-                <div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&width=144" width="144" height="83" loading="lazy" class="uspimg"></span>Sov køligt hele natten</div>
-                <div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.33_2.png?v=1785178345&width=144" width="144" height="99" loading="lazy" class="uspimg"></span>Vælg din side hver nat</div>
-                <div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_3.png?v=1785179494&width=144" width="144" height="93" loading="lazy" class="uspimg"></span>Tilpas højde & fasthed</div>
-                <div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&width=144" width="144" height="83" loading="lazy" class="uspimg"></span>Til alle sovestillinger</div>
-              </div>
-
-            {%- when 'variant_picker' -%}
-              <div class="bundles" role="radiogroup" aria-label="Vælg pakke" {{ block.shopify_attributes }}>
-                <label class="bundle sel" data-hp-bundle="" data-qty="1" data-addon="false" data-addon-qty="1" data-now="499 kr" data-was="599 kr" data-save="Spar 100 kr">
-                  <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="1" checked="">
-                  <span class="radio" aria-hidden="true"></span>
-                  <img src="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&width=160" width="160" height="160" loading="lazy" class="bthumb bthumb--img">
-                  <div class="bmid">
-                    <div class="bt">1× PerfectPillow</div>
-                    <div class="bd">Prøv den i 30 dage</div>
-                  </div>
-                  <div class="bright">
-                    <div class="bw">599 kr</div><div class="bp">499 kr</div>
-                  </div>
-                </label>
-                <label class="bundle" data-hp-bundle="" data-qty="1" data-addon="true" data-addon-qty="1" data-now="574 kr" data-was="698 kr" data-save="Spar 124 kr">
-                  <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="2">
-                  <span class="radio" aria-hidden="true"></span>
-                  <img src="//hushly.dk/cdn/shop/files/1xbetraek.png?v=1782554288&width=160" width="160" height="160" loading="lazy" class="bthumb bthumb--img">
-                  <div class="bmid">
-                    <div class="bt">PerfectPillow + Betræk</div>
-                    <div class="bd">Betræk kun 75 kr (normalt 99)</div>
-                  </div>
-                  <div class="bright">
-                    <div class="bw">698 kr</div><div class="bp">574 kr</div>
-                  </div>
-                </label>
-                <label class="bundle" data-hp-bundle="" data-qty="2" data-addon="true" data-addon-qty="2" data-now="998 kr" data-was="1.396 kr" data-save="Spar 398 kr">
-                  <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="3">
-                  <span class="radio" aria-hidden="true"></span>
-                  <img src="//hushly.dk/cdn/shop/files/2xbetraekpluspuder.png?v=1782554248&width=160" width="160" height="160" loading="lazy" class="bthumb bthumb--img">
-                  <div class="bmid">
-                    <div class="bt">2× PerfectPillow + 2× Betræk <span class="tag val">Bedste værdi</span></div>
-                    <div class="bd">Begge betræk gratis</div>
-                  </div>
-                  <div class="bright">
-                    <div class="bw">1.396 kr</div><div class="bp">998 kr</div>
-                  </div>
-                </label>
-              </div>
-
-              <div class="addoncolor" data-hp-addon-colors="" hidden="">
-                <div class="addoncolor__slot">
-                  <span class="addoncolor__lab" data-hp-addon-lab="" data-one="Vælg farve på betræk" data-two="Farve på betræk nr. 1">Vælg farve på betræk</span>
-                  <div class="addoncolor__opts" role="radiogroup" aria-label="Betræk-farve">
-                    <label class="addoncolor__opt sel">
-                      <input type="radio" name="hp-addon-color" value="58163201114460" data-hp-addon-color="" checked="">
-                      <span class="addoncolor__sw" style="--sw: #9AA0B4" aria-hidden="true"></span>
-                      <span class="addoncolor__nm">Grå</span>
-                    </label>
-                    <label class="addoncolor__opt">
-                      <input type="radio" name="hp-addon-color" value="58144876298588" data-hp-addon-color="">
-                      <span class="addoncolor__sw" style="--sw: #FFFFFF" aria-hidden="true"></span>
-                      <span class="addoncolor__nm">Hvid</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="addoncolor__slot addoncolor__slot2" data-hp-addon-colors2="" hidden="">
-                  <span class="addoncolor__lab">Farve på betræk nr. 2</span>
-                  <div class="addoncolor__opts" role="radiogroup" aria-label="Farve på betræk nr. 2">
-                    <label class="addoncolor__opt sel">
-                      <input type="radio" name="hp-addon-color-2" value="58163201114460" data-hp-addon-color2="" checked="">
-                      <span class="addoncolor__sw" style="--sw: #9AA0B4" aria-hidden="true"></span>
-                      <span class="addoncolor__nm">Grå</span>
-                    </label>
-                    <label class="addoncolor__opt">
-                      <input type="radio" name="hp-addon-color-2" value="58144876298588" data-hp-addon-color2="">
-                      <span class="addoncolor__sw" style="--sw: #FFFFFF" aria-hidden="true"></span>
-                      <span class="addoncolor__nm">Hvid</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-            {%- when 'campaign' -%}
-              <div class="offerurg" data-hp-offer="" data-bundles="" {{ block.shopify_attributes }}>
-                <span class="offerurg__ico" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="8" width="18" height="13" rx="2"></rect><path d="M3 12h18M12 8v13"></path><path d="M12 8S9.5 3.5 7.2 4.4C5.6 5 5.6 7.2 7.2 7.8 8.6 8.3 12 8 12 8ZM12 8s2.5-4.5 4.8-3.6c1.6.6 1.6 2.8 0 3.4C15.4 8.3 12 8 12 8Z"></path></svg>
-                </span>
-                <span class="offerurg__txt">
-                  <b class="offerurg__head">{{ block.settings.heading }}</b>
-                  <span class="offerurg__sub">{{ block.settings.subtext }}</span>
-                </span>
-              </div>
-
-            {%- when 'shipping_message' -%}
-              <div class="shipmsg" data-hp-ship="" data-cutoff="{{ block.settings.cutoff }}" data-today="{{ block.settings.today_text }}" data-default="{{ block.settings.default_text }}" {{ block.shopify_attributes }}>
-                <span class="shipmsg__dot" aria-hidden="true"></span>
-                <span class="shipmsg__body">
-                  <b class="shipmsg__stock">På lager</b><span class="shipmsg__sep"> · </span>
-                  <span data-hp-ship-text="">{{ block.settings.default_text }} <span class="ship-sep">·</span> <span class="ship-today">bestil inden for <strong>02:55:17</strong>, så sender vi i dag</span></span>
-                </span>
-              </div>
-
-            {%- when 'buy_buttons' -%}
-              <div {{ block.shopify_attributes }}>
-                <button type="submit" class="cta" data-hp-atc="" name="add">
-                  {{ block.settings.button_text }}
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-                </button>
-                <p class="hushly-pdp__err" data-hp-err="" role="alert" hidden="">Noget gik galt. Prøv igen.</p>
-                
-                {%- if block.settings.show_secure_text -%}
-                  <div class="ctasub">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 018 0v3"></path></svg>
-                    Sikker & krypteret betaling
-                  </div>
-                {%- endif -%}
-              </div>
-
-            {%- when 'trust_row' -%}
-              <div class="trustrow" {{ block.shopify_attributes }}>
-                <div class="pays">
-                  {{ 'dankort' | payment_type_svg_tag }}
-                  {{ 'visa' | payment_type_svg_tag }}
-                  {{ 'master' | payment_type_svg_tag }}
-                  {{ 'apple_pay' | payment_type_svg_tag }}
-                  {{ 'mobilepay' | payment_type_svg_tag }}
-                </div>
-                <a class="tp" href="https://dk.trustpilot.com/review/hushly.dk" target="_blank" rel="noopener" aria-label="Se vores anmeldelser på Trustpilot">
-                  <svg class="tp-logo tp__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 34" width="112" height="27" role="img" aria-label="Trustpilot" focusable="false">
-                    <path fill="#121511" d="M36.7917 12.0479H50.9671V14.6632H45.3933V29.3656H42.3284V14.6632H36.7793V12.0479H36.7917ZM50.3616 16.8264H52.9816V19.2463H53.0311C53.1176 18.9041 53.2782 18.5741 53.5131 18.2563C53.7479 17.9386 54.0321 17.633 54.3658 17.3764C54.6995 17.1075 55.0703 16.8998 55.4781 16.7287C55.8859 16.5698 56.3061 16.4842 56.7263 16.4842C57.0477 16.4842 57.2825 16.4964 57.4061 16.5087C57.5296 16.5209 57.6532 16.5453 57.7892 16.5576V19.2218C57.5914 19.1852 57.3937 19.1607 57.1836 19.1363C56.9735 19.1118 56.7758 19.0996 56.578 19.0996C56.1084 19.0996 55.6635 19.1974 55.2433 19.3807C54.8231 19.564 54.4647 19.8451 54.1557 20.1995C53.8467 20.5662 53.5996 21.0062 53.4142 21.5439C53.2288 22.0816 53.1423 22.6927 53.1423 23.3893V29.3534H50.3492V16.8264H50.3616ZM70.6299 29.3656H67.8863V27.6179H67.8369C67.4908 28.2535 66.9841 28.7545 66.3044 29.1334C65.6246 29.5123 64.9325 29.7078 64.2281 29.7078C62.5597 29.7078 61.3485 29.3045 60.607 28.4857C59.8655 27.6668 59.4947 26.4325 59.4947 24.7826V16.8264H62.2878V24.5137C62.2878 25.6136 62.4979 26.3958 62.9304 26.848C63.3506 27.3002 63.9562 27.5324 64.7224 27.5324C65.3157 27.5324 65.7977 27.4468 66.1931 27.2635C66.5886 27.0802 66.9099 26.848 67.1448 26.5425C67.3919 26.2491 67.565 25.8825 67.6762 25.467C67.7874 25.0514 67.8369 24.5992 67.8369 24.1104V16.8386H70.6299V29.3656ZM75.3881 25.3448C75.4746 26.1514 75.7835 26.7136 76.315 27.0435C76.8587 27.3613 77.5014 27.5324 78.2553 27.5324C78.5148 27.5324 78.8114 27.5079 79.1451 27.4713C79.4788 27.4346 79.8001 27.3491 80.0844 27.2391C80.381 27.1291 80.6158 26.958 80.8135 26.738C80.9989 26.518 81.0854 26.2369 81.0731 25.8825C81.0607 25.5281 80.9248 25.2348 80.6776 25.0148C80.4304 24.7826 80.1215 24.6115 79.7383 24.4648C79.3552 24.3304 78.9227 24.2082 78.4283 24.1104C77.934 24.0126 77.4396 23.9026 76.9329 23.7926C76.4138 23.6826 75.9071 23.536 75.4251 23.3771C74.9431 23.2182 74.5106 22.9982 74.1275 22.7171C73.7443 22.4483 73.4354 22.0939 73.2129 21.6661C72.9781 21.2384 72.8669 20.7128 72.8669 20.0773C72.8669 19.3929 73.0399 18.8307 73.3736 18.3663C73.7073 17.9019 74.1398 17.5353 74.6465 17.2542C75.1656 16.9731 75.7341 16.7775 76.3644 16.6553C76.9947 16.5453 77.6003 16.4842 78.1688 16.4842C78.8238 16.4842 79.4541 16.5576 80.0473 16.692C80.6405 16.8264 81.1843 17.0464 81.6663 17.3642C82.1483 17.6697 82.5438 18.073 82.8651 18.5619C83.1864 19.0507 83.3842 19.6496 83.4707 20.3462H80.554C80.4181 19.6862 80.1215 19.234 79.6395 19.0141C79.1575 18.7819 78.6013 18.6719 77.9834 18.6719C77.7856 18.6719 77.5508 18.6841 77.2789 18.7207C77.007 18.7574 76.7599 18.8185 76.5127 18.9041C76.2779 18.9896 76.0801 19.1241 75.9071 19.2952C75.7465 19.4663 75.6599 19.6862 75.6599 19.9673C75.6599 20.3095 75.7835 20.5784 76.0183 20.7862C76.2532 20.9939 76.5621 21.165 76.9453 21.3117C77.3284 21.4461 77.7609 21.5683 78.2553 21.6661C78.7496 21.7639 79.2563 21.8739 79.7754 21.9839C80.2821 22.0939 80.7765 22.2405 81.2708 22.3994C81.7652 22.5583 82.1977 22.7783 82.5808 23.0594C82.964 23.3404 83.2729 23.6826 83.5078 24.0982C83.7426 24.5137 83.8662 25.0392 83.8662 25.6503C83.8662 26.3958 83.6931 27.0191 83.3471 27.5446C83.001 28.0579 82.5561 28.4857 82.0123 28.8034C81.4686 29.1212 80.8506 29.3656 80.1832 29.5123C79.5159 29.6589 78.8485 29.7322 78.1935 29.7322C77.3902 29.7322 76.6486 29.6467 75.9689 29.4634C75.2892 29.2801 74.696 29.0112 74.2016 28.6568C73.7073 28.2901 73.3118 27.8379 73.0275 27.3002C72.7433 26.7624 72.595 26.1147 72.5703 25.3692H75.3881V25.3448ZM84.6077 16.8264H86.721V13.0622H89.5141V16.8264H92.0353V18.8918H89.5141V25.5892C89.5141 25.8825 89.5265 26.1269 89.5512 26.3469C89.5759 26.5547 89.6377 26.738 89.7242 26.8847C89.8107 27.0313 89.9467 27.1413 90.132 27.2146C90.3174 27.288 90.5522 27.3246 90.8736 27.3246C91.0713 27.3246 91.2691 27.3246 91.4668 27.3124C91.6645 27.3002 91.8623 27.2757 92.06 27.2269V29.3656C91.751 29.4023 91.4421 29.4267 91.1578 29.4634C90.8612 29.5 90.5646 29.5123 90.2556 29.5123C89.5141 29.5123 88.9209 29.4389 88.476 29.3045C88.0311 29.1701 87.6727 28.9623 87.4255 28.6934C87.1659 28.4246 87.0053 28.0946 86.9064 27.6913C86.8199 27.288 86.7581 26.8235 86.7458 26.3102V18.9163H84.6324V16.8264H84.6077ZM94.0127 16.8264H96.6575V18.5252H96.7069C97.1024 17.7919 97.6462 17.2786 98.3506 16.9609C99.0551 16.6431 99.8089 16.4842 100.637 16.4842C101.638 16.4842 102.503 16.6553 103.245 17.0097C103.986 17.3519 104.604 17.8286 105.099 18.4397C105.593 19.0507 105.951 19.7596 106.198 20.5662C106.446 21.3728 106.569 22.2405 106.569 23.1571C106.569 24.0004 106.458 24.8192 106.236 25.6014C106.013 26.3958 105.679 27.0924 105.234 27.7035C104.79 28.3146 104.221 28.7912 103.529 29.1578C102.837 29.5245 102.034 29.7078 101.094 29.7078C100.686 29.7078 100.279 29.6711 99.8707 29.5978C99.4629 29.5245 99.0674 29.4023 98.6967 29.2434C98.3259 29.0845 97.9675 28.8767 97.6585 28.6201C97.3372 28.3634 97.0777 28.0701 96.8552 27.7402H96.8058V33.9975H94.0127V16.8264ZM103.776 23.1082C103.776 22.5461 103.702 21.9961 103.554 21.4583C103.405 20.9206 103.183 20.4562 102.886 20.0407C102.59 19.6251 102.219 19.2952 101.786 19.0507C101.341 18.8063 100.835 18.6719 100.266 18.6719C99.0921 18.6719 98.2023 19.0752 97.6091 19.8818C97.0159 20.6884 96.7193 21.7639 96.7193 23.1082C96.7193 23.7438 96.7934 24.3304 96.9541 24.8681C97.1147 25.4059 97.3372 25.8703 97.6585 26.2614C97.9675 26.6524 98.3383 26.958 98.7708 27.178C99.2034 27.4102 99.7101 27.5202 100.279 27.5202C100.921 27.5202 101.453 27.3857 101.898 27.1291C102.342 26.8724 102.701 26.5302 102.985 26.1269C103.269 25.7114 103.479 25.247 103.603 24.7215C103.714 24.1959 103.776 23.6582 103.776 23.1082ZM108.707 12.0479H111.5V14.6632H108.707V12.0479ZM108.707 16.8264H111.5V29.3656H108.707V16.8264ZM113.997 12.0479H116.79V29.3656H113.997V12.0479ZM125.354 29.7078C124.341 29.7078 123.439 29.5367 122.648 29.2067C121.857 28.8767 121.19 28.4123 120.633 27.8379C120.09 27.2513 119.669 26.5547 119.385 25.7481C119.101 24.9414 118.953 24.0493 118.953 23.0838C118.953 22.1305 119.101 21.2506 119.385 20.444C119.669 19.6374 120.09 18.9407 120.633 18.3541C121.177 17.7675 121.857 17.3153 122.648 16.9853C123.439 16.6553 124.341 16.4842 125.354 16.4842C126.368 16.4842 127.27 16.6553 128.061 16.9853C128.852 17.3153 129.519 17.7797 130.076 18.3541C130.619 18.9407 131.04 19.6374 131.324 20.444C131.608 21.2506 131.756 22.1305 131.756 23.0838C131.756 24.0493 131.608 24.9414 131.324 25.7481C131.04 26.5547 130.619 27.2513 130.076 27.8379C129.532 28.4246 128.852 28.8767 128.061 29.2067C127.27 29.5367 126.368 29.7078 125.354 29.7078ZM125.354 27.5202C125.972 27.5202 126.516 27.3857 126.974 27.1291C127.431 26.8724 127.802 26.5302 128.098 26.1147C128.395 25.6992 128.605 25.2225 128.753 24.697C128.889 24.1715 128.963 23.6338 128.963 23.0838C128.963 22.5461 128.889 22.0205 128.753 21.4828C128.617 20.945 128.395 20.4806 128.098 20.0651C127.802 19.6496 127.431 19.3196 126.974 19.0629C126.516 18.8063 125.972 18.6719 125.354 18.6719C124.737 18.6719 124.193 18.8063 123.736 19.0629C123.278 19.3196 122.907 19.6618 122.611 20.0651C122.314 20.4806 122.104 20.945 121.956 21.4828C121.82 22.0205 121.746 22.5461 121.746 23.0838C121.746 23.6338 121.82 24.1715 121.956 24.697C122.092 25.2225 122.314 25.6992 122.611 26.1147C122.907 26.5302 123.278 26.8724 123.736 27.1291C124.193 27.398 124.737 27.5202 125.354 27.5202ZM132.572 16.8264H134.685V13.0622H137.478V16.8264H140V18.8918H137.478V25.5892C137.478 25.8825 137.491 26.1269 137.516 26.3469C137.54 26.5547 137.602 26.738 137.689 26.8847C137.775 27.0313 137.911 27.1413 138.096 27.2146C138.282 27.288 138.517 27.3246 138.838 27.3246C139.036 27.3246 139.233 27.3246 139.431 27.3124C139.629 27.3002 139.827 27.2757 140.024 27.2269V29.3656C139.715 29.4023 139.406 29.4267 139.122 29.4634C138.826 29.5 138.529 29.5123 138.22 29.5123C137.478 29.5123 136.885 29.4389 136.44 29.3045C135.995 29.1701 135.637 28.9623 135.39 28.6934C135.13 28.4246 134.97 28.0946 134.871 27.6913C134.784 27.288 134.722 26.8235 134.71 26.3102V18.9163H132.597V16.8264H132.572Z"></path>
-                    <path fill="#04DA8D" d="M33.5293 12.0503H20.7256L16.7708 0L12.8037 12.0503L0 12.0381L10.369 19.4932L6.40183 31.5313L16.7708 24.0884L27.1275 31.5313L23.1727 19.4932L33.5293 12.0503Z"></path>
-                    <path fill="#000032" d="M24.0622 22.2185L23.1723 19.4932L16.7705 24.0884L24.0622 22.2185Z"></path>
-                  </svg>
-                  <span class="g">Se anmeldelser</span>
-                </a>
-              </div>
-
-            {%- when 'delivery_features' -%}
-              <div class="deliv" {{ block.shopify_attributes }}>
-                <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h13v8H3zM16 10h3l2 3v2h-5z"></path><circle cx="7" cy="17" r="1.6"></circle><circle cx="18" cy="17" r="1.6"></circle></svg><span><b>Fri fragt</b> over 499 kr</span></div>
-                <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span><b>Hurtig levering</b> · 1-2 hverdage</span></div>
-                <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg><span><b>30 dages tilfredshedsgaranti</b> — eller pengene tilbage</span></div>
-                <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7v6h6M3 13a9 9 0 109-9"></path></svg><span><b>Nem retur</b> i 30 dage</span></div>
-              </div>
-
-            {%- when 'review_marquee' -%}
-              <div class="mq" data-hp-mq="" {{ block.shopify_attributes }}>
-                <div class="mqtrack" style="--mq-duration: 220s">
-                  <!-- These would be dynamic from metaobjects or hardcoded as user requested -->
-                  <div class="mqc"><img src="//hushly.dk/cdn/shop/files/white_2.png?v=1785161262&width=120" width="120" height="150" loading="lazy" class="pic">
-                    <div><div class="ts" aria-hidden="true">★★★★★</div><p>Jeg købte en pude fra dem, og den var så behagelig...</p><div class="nm">— Verificeret køber</div></div>
-                  </div>
-                  <!-- Add more mqc items here if needed for repetition -->
-                </div>
-              </div>
-
-          {%- endcase -%}
-        {%- endfor -%}
-
-        {%- if section.settings.show_sticky_cta -%}
-          <div class="hpsticky is-visible" data-hp-sticky="">
-            <div class="hpsticky__in">
-              <img src="{{ product.featured_media | image_url: width: 120 }}" width="120" height="120" loading="lazy" class="hpsticky__img">
-              <div class="hpsticky__txt">
-                <span class="hpsticky__name">{{ product.title }}</span>
-                <span class="hpsticky__price" data-hp-sticky-now="">{{ product.selected_or_first_available_variant.price | money }}</span>
-              </div>
-              <button type="submit" class="hpsticky__cta" data-hp-sticky-atc="" name="add">Tilføj til kurv</button>
-            </div>
+        <h1 class="title">PerfectPillow<span class="tm">™</span></h1><p class="hook">To sider. Én perfekt nat.</p><p class="sub">Kølig is-silke til varme nætter, blød bambus til de kølige — og et strejf lavendel, når du skal falde til ro.</p><div class="sides" aria-label="To sider i én pude">
+            <span class="sbadge sbadge--cool">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 2v20M5 7l14 10M19 7 5 17M2.5 12h19"></path></svg>
+              Kølende is-silke
+            </span><span class="sides-mid">2-i-1 vendbar</span><span class="sbadge sbadge--lav">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 21c8.5 0 14-5.5 14-14 0 0-3.2 1-6.5 1C7 8 4 11 4 16.5c0 1.6 0 3.2 1 4.5Z"></path><path d="M5 21c1-5.5 4.2-8.7 8.5-10.5"></path></svg>
+              Lavendelduft
+            </span>
+          </div><div class="price">
+            <span class="now" data-hp-now="">998 kr</span>
+            <span class="was" data-hp-was="">1.396 kr</span>
+            <span class="save" data-hp-save="">Spar 398 kr</span>
           </div>
-        {%- endif -%}
-      {% endform %}
+<div class="usps" style="--usp-icon: 34px; --usp-box: 38px"><div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=144" alt="" srcset="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=72 72w, //hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=144 144w" width="144" height="83" loading="lazy" class="uspimg" sizes="36px">
+</span>Sov køligt hele natten</div><div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.33_2.png?v=1785178345&amp;width=144" alt="" srcset="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.33_2.png?v=1785178345&amp;width=72 72w, //hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.33_2.png?v=1785178345&amp;width=144 144w" width="144" height="99" loading="lazy" class="uspimg" sizes="36px">
+</span>Vælg din side hver nat</div><div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_3.png?v=1785179494&amp;width=144" alt="" srcset="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_3.png?v=1785179494&amp;width=72 72w, //hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_3.png?v=1785179494&amp;width=144 144w" width="144" height="93" loading="lazy" class="uspimg" sizes="36px">
+</span>Tilpas højde &amp; fasthed</div><div class="usp"><span class="i"><img src="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=144" alt="" srcset="//hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=72 72w, //hushly.dk/cdn/shop/files/ChatGPT_Image_27._jul._2026_20.19.34_4.png?v=1785180670&amp;width=144 144w" width="144" height="83" loading="lazy" class="uspimg" sizes="36px">
+</span>Til alle sovestillinger</div></div>
 
-      <!-- DETAILS -->
-      <div class="details">
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'details_block' -%}
-            <div class="dblock" {{ block.shopify_attributes }}>
-              <h3 class="dh">{{ block.settings.heading }}</h3>
-              <div class="dp rte">{{ block.settings.content }}</div>
+<style data-shopify="">
+  /* Higher specificity than the section's own .usp rules so the sliders always win. */
+  .hushly-pdp .usps .usp .i {
+    width: calc(var(--usp-box, 38px) * .84);
+    height: calc(var(--usp-box, 38px) * .84);
+    border-radius: calc(var(--usp-box, 38px) * .26);
+    flex: 0 0 auto;
+  }
+  .hushly-pdp .usps .usp .i svg,
+  .hushly-pdp .usps .usp .i .uspimg {
+    width: calc(var(--usp-icon, 21px) * .86);
+    height: calc(var(--usp-icon, 21px) * .86);
+  }
+  .hushly-pdp .usps .usp .i svg.icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .hushly-pdp .usps .usp .i .uspimg { object-fit: contain; display: block; }
+
+  /* No backdrop: let the glyph stand on its own. */
+  .hushly-pdp .usps--nobox .usp .i {
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .hushly-pdp .usps .usp .i {
+      width: var(--usp-box, 38px);
+      height: var(--usp-box, 38px);
+      border-radius: calc(var(--usp-box, 38px) * .26);
+    }
+    .hushly-pdp .usps .usp .i svg,
+    .hushly-pdp .usps .usp .i .uspimg {
+      width: var(--usp-icon, 21px);
+      height: var(--usp-icon, 21px);
+    }
+    .hushly-pdp .usps--nobox .usp .i { width: auto; height: auto; }
+  }
+</style>
+
+<div class="bundles" role="radiogroup" aria-label="Vælg pakke"><label class="bundle" data-hp-bundle="" data-qty="1" data-addon="false" data-addon-qty="1" data-now="499 kr" data-was="599 kr" data-save="Spar 100 kr">
+                <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="1" checked="">
+                <span class="radio" aria-hidden="true"></span><img src="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=160" alt="Hushly PerfectPillow – kølende memory-foam pude set forfra" srcset="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=120 120w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=160 160w" width="160" height="160" loading="lazy" class="bthumb bthumb--img" sizes="60px">
+<div class="bmid">
+                  <div class="bt">1× PerfectPillow
+</div><div class="bd">Prøv den i 30 dage</div></div>
+                <div class="bright"><div class="bw">599 kr</div><div class="bp">499 kr</div>
+                </div>
+              </label><label class="bundle" data-hp-bundle="" data-qty="1" data-addon="true" data-addon-qty="1" data-now="574 kr" data-was="698 kr" data-save="Spar 124 kr">
+                <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="2">
+                <span class="radio" aria-hidden="true"></span><img src="//hushly.dk/cdn/shop/files/1xbetraek.png?v=1782554288&amp;width=160" alt="PerfectPillow + Betræk" srcset="//hushly.dk/cdn/shop/files/1xbetraek.png?v=1782554288&amp;width=120 120w, //hushly.dk/cdn/shop/files/1xbetraek.png?v=1782554288&amp;width=160 160w" width="160" height="160" loading="lazy" class="bthumb bthumb--img" sizes="60px">
+<div class="bmid">
+                  <div class="bt">PerfectPillow + Betræk
+</div><div class="bd">Betræk kun 75 kr (normalt 99)</div></div>
+                <div class="bright"><div class="bw">698 kr</div><div class="bp">574 kr</div>
+                </div>
+              </label><label class="bundle sel" data-hp-bundle="" data-qty="2" data-addon="true" data-addon-qty="2" data-now="998 kr" data-was="1.396 kr" data-save="Spar 398 kr">
+                <input type="radio" name="hp-bundle" class="hushly-pdp__br" value="3">
+                <span class="radio" aria-hidden="true"></span><img src="//hushly.dk/cdn/shop/files/2xbetraekpluspuder.png?v=1782554248&amp;width=160" alt="2× PerfectPillow + 2× Betræk" srcset="//hushly.dk/cdn/shop/files/2xbetraekpluspuder.png?v=1782554248&amp;width=120 120w, //hushly.dk/cdn/shop/files/2xbetraekpluspuder.png?v=1782554248&amp;width=160 160w" width="160" height="160" loading="lazy" class="bthumb bthumb--img" sizes="60px">
+<div class="bmid">
+                  <div class="bt">2× PerfectPillow + 2× Betræk
+<span class="tag val">Bedste værdi</span></div><div class="bd">Begge betræk gratis</div></div>
+                <div class="bright"><div class="bw">1.396 kr</div><div class="bp">998 kr</div>
+                </div>
+              </label></div><div class="addoncolor" data-hp-addon-colors="">
+            <div class="addoncolor__slot">
+            <span class="addoncolor__lab" data-hp-addon-lab="" data-one="Vælg farve på betræk" data-two="Farve på betræk nr. 1">Farve på betræk nr. 1</span>
+            <div class="addoncolor__opts" role="radiogroup" aria-label="Betræk-farve"><label class="addoncolor__opt sel">
+                  <input type="radio" name="hp-addon-color" value="58163201114460" data-hp-addon-color="" checked="">
+                  <span class="addoncolor__sw" style="--sw: #9AA0B4" aria-hidden="true"></span>
+                  <span class="addoncolor__nm">Grå</span>
+                </label><label class="addoncolor__opt">
+                  <input type="radio" name="hp-addon-color" value="58144876298588" data-hp-addon-color="">
+                  <span class="addoncolor__sw" style="--sw: #FFFFFF" aria-hidden="true"></span>
+                  <span class="addoncolor__nm">Hvid</span>
+                </label></div>
+
+            </div><div class="addoncolor__slot addoncolor__slot2" data-hp-addon-colors2="">
+              <span class="addoncolor__lab">Farve på betræk nr. 2</span>
+              <div class="addoncolor__opts" role="radiogroup" aria-label="Farve på betræk nr. 2"><label class="addoncolor__opt sel">
+                    <input type="radio" name="hp-addon-color-2" value="58163201114460" data-hp-addon-color2="" checked="">
+                    <span class="addoncolor__sw" style="--sw: #9AA0B4" aria-hidden="true"></span>
+                    <span class="addoncolor__nm">Grå</span>
+                  </label><label class="addoncolor__opt">
+                    <input type="radio" name="hp-addon-color-2" value="58144876298588" data-hp-addon-color2="">
+                    <span class="addoncolor__sw" style="--sw: #FFFFFF" aria-hidden="true"></span>
+                    <span class="addoncolor__nm">Hvid</span>
+                  </label></div>
             </div>
-          {%- endif -%}
-        {%- endfor -%}
-        
-        <!-- Specifications Block -->
-        <div class="dblock">
-          <h3 class="dh">Specifikationer</h3>
-          <dl class="spec">
-            <div><dt>Sider</dt><dd>2-i-1 · is-silke + bambus</dd></div>
-            <div><dt>Fyld</dt><dd>Justérbart fyld: lavendel-memory foam + fiber</dd></div>
-            <div><dt>Betræk</dt><dd>Is-silke + åndbar bambus-strik</dd></div>
-            <div><dt>Størrelse</dt><dd>50 × 70 cm</dd></div>
-            <div><dt>Højde / fasthed</dt><dd>Justérbar — tilpas selv</dd></div>
-            <div><dt>Vask</dt><dd>Aftageligt betræk, vask v. 40°</dd></div>
-          </dl>
-        </div>
-      </div>
+          </div><div class="offerurg" data-hp-offer="" data-bundles="">
+            <span class="offerurg__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="8" width="18" height="13" rx="2"></rect><path d="M3 12h18M12 8v13"></path><path d="M12 8S9.5 3.5 7.2 4.4C5.6 5 5.6 7.2 7.2 7.8 8.6 8.3 12 8 12 8ZM12 8s2.5-4.5 4.8-3.6c1.6.6 1.6 2.8 0 3.4C15.4 8.3 12 8 12 8Z"></path></svg>
+            </span>
+            <span class="offerurg__txt">
+              <b class="offerurg__head">Kampagne: 2 betræk med, når du tager 2 puder</b><span class="offerurg__sub">Vælg selv farve til hver side af sengen</span></span></div><div class="shipmsg" data-hp-ship="" data-cutoff="14" data-today="bestil inden for %t, så sender vi i dag" data-default="1-2 hverdages levering"><span class="shipmsg__dot" aria-hidden="true"></span><span class="shipmsg__body"><b class="shipmsg__stock">På lager</b><span class="shipmsg__sep"> · </span><span data-hp-ship-text="">1-2 hverdages levering <span class="ship-sep">·</span> <span class="ship-today">bestil inden for <strong>01:05:31</strong>, så sender vi i dag</span></span></span>
+          </div><button type="submit" class="cta" data-hp-atc="">Tilføj til kurv<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button><p class="hushly-pdp__err" data-hp-err="" role="alert" hidden="">Noget gik galt. Prøv igen.</p><div class="ctasub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 018 0v3"></path></svg>Sikker &amp; krypteret betaling</div><div class="trustrow"><div class="pays"><svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-dankort"><title id="pi-dankort">Dankort</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#E31F28" d="M18.309 15.378c.985-.645 1.621-1.641 1.907-2.991l3.145 3.968h6.028a6.858 6.858 0 01-2.394 1.918 6.758 6.758 0 01-3.086.727H12.566a6.792 6.792 0 01-3.086-.728 6.815 6.815 0 01-2.395-1.931h7.089c1.78.001 3.158-.32 4.135-.963zm-3.062-4.623c.254.23.321.568.202 1.013-.15.517-.342.878-.571 1.084-.278.246-.699.37-1.264.37H9.552l1.001-2.765h3.67c.453 0 .794.099 1.024.298zm11.651-5.088a6.9 6.9 0 012.337 1.799h-5.899l-2.979 3.086c-.103-1.12-.639-1.935-1.607-2.443-.834-.429-2.018-.644-3.551-.644H7.24A6.995 6.995 0 0112.566 5h11.343c1.048 0 2.045.222 2.989.667zm-.999 5.814l3.644-3.634a6.99 6.99 0 011.014 1.931c.239.715.357 1.458.357 2.228 0 .723-.107 1.426-.32 2.108a7.016 7.016 0 01-.919 1.858l-3.776-4.491z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"></rect><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" style="fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;"></path><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" style="fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;"></path><path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" style="fill:white;fill-opacity:1;"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" fill="none" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><rect x=".5" y=".5" width="37" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" fill="none"></rect><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" style="fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;"></path><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" style="fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;"></path><path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" style="fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;"></path><path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" style="fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;"></path><path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" style="fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;"></path></svg>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z"></path><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875"></path><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858"></path><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048"></path></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z"></path><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z"></path><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z"></path></g></g></svg>
+<svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-mobilepay"><title id="pi-mobilepay">MobilePay</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20.05 15.296s2.53-.771 4.282-.776c2.896-.007 4.857 1.15 4.857 1.15V10.06s-1.97-1.02-4.453-1.09c-2.481-.068-4.687 1.012-4.687 1.012v5.313z" fill="#5A78FF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.308 9.19l2.082 4.957V9.396s1.646-.882 3.485-1.13c1.84-.249 4.181.08 4.181.08l-1.133-2.707s-2.461-.159-4.69.794c-2.228.952-3.925 2.756-3.925 2.756z" fill="#5A78FF"></path><path d="M21.428 5.676l-.82-1.99a1.818 1.818 0 00-2.37-.996l-5.663 2.334a1.818 1.818 0 00-.98 2.376l5.46 13.247a1.818 1.818 0 002.37.995l5.662-2.334a1.817 1.817 0 00.98-2.376l-.677-1.642s-.462-.027-.676-.033c-.226-.006-.644-.001-.644-.001l.88 2.136a.606.606 0 01-.326.793l-5.663 2.333a.606.606 0 01-.79-.331L12.711 6.94a.606.606 0 01.327-.792L18.7 3.814a.606.606 0 01.79.332l.83 2.011s.383-.187.59-.27c.206-.082.518-.211.518-.211z" fill="#5A78FF"></path></svg></div><a class="tp" href="https://dk.trustpilot.com/review/hushly.dk" target="_blank" rel="noopener" aria-label="Se vores anmeldelser på Trustpilot">
+<svg class="tp-logo tp__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 34" width="112" height="27" role="img" aria-label="Trustpilot" focusable="false">
+  <path fill="#121511" d="M36.7917 12.0479H50.9671V14.6632H45.3933V29.3656H42.3284V14.6632H36.7793V12.0479H36.7917ZM50.3616 16.8264H52.9816V19.2463H53.0311C53.1176 18.9041 53.2782 18.5741 53.5131 18.2563C53.7479 17.9386 54.0321 17.633 54.3658 17.3764C54.6995 17.1075 55.0703 16.8998 55.4781 16.7287C55.8859 16.5698 56.3061 16.4842 56.7263 16.4842C57.0477 16.4842 57.2825 16.4964 57.4061 16.5087C57.5296 16.5209 57.6532 16.5453 57.7892 16.5576V19.2218C57.5914 19.1852 57.3937 19.1607 57.1836 19.1363C56.9735 19.1118 56.7758 19.0996 56.578 19.0996C56.1084 19.0996 55.6635 19.1974 55.2433 19.3807C54.8231 19.564 54.4647 19.8451 54.1557 20.1995C53.8467 20.5662 53.5996 21.0062 53.4142 21.5439C53.2288 22.0816 53.1423 22.6927 53.1423 23.3893V29.3534H50.3492V16.8264H50.3616ZM70.6299 29.3656H67.8863V27.6179H67.8369C67.4908 28.2535 66.9841 28.7545 66.3044 29.1334C65.6246 29.5123 64.9325 29.7078 64.2281 29.7078C62.5597 29.7078 61.3485 29.3045 60.607 28.4857C59.8655 27.6668 59.4947 26.4325 59.4947 24.7826V16.8264H62.2878V24.5137C62.2878 25.6136 62.4979 26.3958 62.9304 26.848C63.3506 27.3002 63.9562 27.5324 64.7224 27.5324C65.3157 27.5324 65.7977 27.4468 66.1931 27.2635C66.5886 27.0802 66.9099 26.848 67.1448 26.5425C67.3919 26.2491 67.565 25.8825 67.6762 25.467C67.7874 25.0514 67.8369 24.5992 67.8369 24.1104V16.8386H70.6299V29.3656ZM75.3881 25.3448C75.4746 26.1514 75.7835 26.7136 76.315 27.0435C76.8587 27.3613 77.5014 27.5324 78.2553 27.5324C78.5148 27.5324 78.8114 27.5079 79.1451 27.4713C79.4788 27.4346 79.8001 27.3491 80.0844 27.2391C80.381 27.1291 80.6158 26.958 80.8135 26.738C80.9989 26.518 81.0854 26.2369 81.0731 25.8825C81.0607 25.5281 80.9248 25.2348 80.6776 25.0148C80.4304 24.7826 80.1215 24.6115 79.7383 24.4648C79.3552 24.3304 78.9227 24.2082 78.4283 24.1104C77.934 24.0126 77.4396 23.9026 76.9329 23.7926C76.4138 23.6826 75.9071 23.536 75.4251 23.3771C74.9431 23.2182 74.5106 22.9982 74.1275 22.7171C73.7443 22.4483 73.4354 22.0939 73.2129 21.6661C72.9781 21.2384 72.8669 20.7128 72.8669 20.0773C72.8669 19.3929 73.0399 18.8307 73.3736 18.3663C73.7073 17.9019 74.1398 17.5353 74.6465 17.2542C75.1656 16.9731 75.7341 16.7775 76.3644 16.6553C76.9947 16.5453 77.6003 16.4842 78.1688 16.4842C78.8238 16.4842 79.4541 16.5576 80.0473 16.692C80.6405 16.8264 81.1843 17.0464 81.6663 17.3642C82.1483 17.6697 82.5438 18.073 82.8651 18.5619C83.1864 19.0507 83.3842 19.6496 83.4707 20.3462H80.554C80.4181 19.6862 80.1215 19.234 79.6395 19.0141C79.1575 18.7819 78.6013 18.6719 77.9834 18.6719C77.7856 18.6719 77.5508 18.6841 77.2789 18.7207C77.007 18.7574 76.7599 18.8185 76.5127 18.9041C76.2779 18.9896 76.0801 19.1241 75.9071 19.2952C75.7465 19.4663 75.6599 19.6862 75.6599 19.9673C75.6599 20.3095 75.7835 20.5784 76.0183 20.7862C76.2532 20.9939 76.5621 21.165 76.9453 21.3117C77.3284 21.4461 77.7609 21.5683 78.2553 21.6661C78.7496 21.7639 79.2563 21.8739 79.7754 21.9839C80.2821 22.0939 80.7765 22.2405 81.2708 22.3994C81.7652 22.5583 82.1977 22.7783 82.5808 23.0594C82.964 23.3404 83.2729 23.6826 83.5078 24.0982C83.7426 24.5137 83.8662 25.0392 83.8662 25.6503C83.8662 26.3958 83.6931 27.0191 83.3471 27.5446C83.001 28.0579 82.5561 28.4857 82.0123 28.8034C81.4686 29.1212 80.8506 29.3656 80.1832 29.5123C79.5159 29.6589 78.8485 29.7322 78.1935 29.7322C77.3902 29.7322 76.6486 29.6467 75.9689 29.4634C75.2892 29.2801 74.696 29.0112 74.2016 28.6568C73.7073 28.2901 73.3118 27.8379 73.0275 27.3002C72.7433 26.7624 72.595 26.1147 72.5703 25.3692H75.3881V25.3448ZM84.6077 16.8264H86.721V13.0622H89.5141V16.8264H92.0353V18.8918H89.5141V25.5892C89.5141 25.8825 89.5265 26.1269 89.5512 26.3469C89.5759 26.5547 89.6377 26.738 89.7242 26.8847C89.8107 27.0313 89.9467 27.1413 90.132 27.2146C90.3174 27.288 90.5522 27.3246 90.8736 27.3246C91.0713 27.3246 91.2691 27.3246 91.4668 27.3124C91.6645 27.3002 91.8623 27.2757 92.06 27.2269V29.3656C91.751 29.4023 91.4421 29.4267 91.1578 29.4634C90.8612 29.5 90.5646 29.5123 90.2556 29.5123C89.5141 29.5123 88.9209 29.4389 88.476 29.3045C88.0311 29.1701 87.6727 28.9623 87.4255 28.6934C87.1659 28.4246 87.0053 28.0946 86.9064 27.6913C86.8199 27.288 86.7581 26.8235 86.7458 26.3102V18.9163H84.6324V16.8264H84.6077ZM94.0127 16.8264H96.6575V18.5252H96.7069C97.1024 17.7919 97.6462 17.2786 98.3506 16.9609C99.0551 16.6431 99.8089 16.4842 100.637 16.4842C101.638 16.4842 102.503 16.6553 103.245 17.0097C103.986 17.3519 104.604 17.8286 105.099 18.4397C105.593 19.0507 105.951 19.7596 106.198 20.5662C106.446 21.3728 106.569 22.2405 106.569 23.1571C106.569 24.0004 106.458 24.8192 106.236 25.6014C106.013 26.3958 105.679 27.0924 105.234 27.7035C104.79 28.3146 104.221 28.7912 103.529 29.1578C102.837 29.5245 102.034 29.7078 101.094 29.7078C100.686 29.7078 100.279 29.6711 99.8707 29.5978C99.4629 29.5245 99.0674 29.4023 98.6967 29.2434C98.3259 29.0845 97.9675 28.8767 97.6585 28.6201C97.3372 28.3634 97.0777 28.0701 96.8552 27.7402H96.8058V33.9975H94.0127V16.8264ZM103.776 23.1082C103.776 22.5461 103.702 21.9961 103.554 21.4583C103.405 20.9206 103.183 20.4562 102.886 20.0407C102.59 19.6251 102.219 19.2952 101.786 19.0507C101.341 18.8063 100.835 18.6719 100.266 18.6719C99.0921 18.6719 98.2023 19.0752 97.6091 19.8818C97.0159 20.6884 96.7193 21.7639 96.7193 23.1082C96.7193 23.7438 96.7934 24.3304 96.9541 24.8681C97.1147 25.4059 97.3372 25.8703 97.6585 26.2614C97.9675 26.6524 98.3383 26.958 98.7708 27.178C99.2034 27.4102 99.7101 27.5202 100.279 27.5202C100.921 27.5202 101.453 27.3857 101.898 27.1291C102.342 26.8724 102.701 26.5302 102.985 26.1269C103.269 25.7114 103.479 25.247 103.603 24.7215C103.714 24.1959 103.776 23.6582 103.776 23.1082ZM108.707 12.0479H111.5V14.6632H108.707V12.0479ZM108.707 16.8264H111.5V29.3656H108.707V16.8264ZM113.997 12.0479H116.79V29.3656H113.997V12.0479ZM125.354 29.7078C124.341 29.7078 123.439 29.5367 122.648 29.2067C121.857 28.8767 121.19 28.4123 120.633 27.8379C120.09 27.2513 119.669 26.5547 119.385 25.7481C119.101 24.9414 118.953 24.0493 118.953 23.0838C118.953 22.1305 119.101 21.2506 119.385 20.444C119.669 19.6374 120.09 18.9407 120.633 18.3541C121.177 17.7675 121.857 17.3153 122.648 16.9853C123.439 16.6553 124.341 16.4842 125.354 16.4842C126.368 16.4842 127.27 16.6553 128.061 16.9853C128.852 17.3153 129.519 17.7797 130.076 18.3541C130.619 18.9407 131.04 19.6374 131.324 20.444C131.608 21.2506 131.756 22.1305 131.756 23.0838C131.756 24.0493 131.608 24.9414 131.324 25.7481C131.04 26.5547 130.619 27.2513 130.076 27.8379C129.532 28.4246 128.852 28.8767 128.061 29.2067C127.27 29.5367 126.368 29.7078 125.354 29.7078ZM125.354 27.5202C125.972 27.5202 126.516 27.3857 126.974 27.1291C127.431 26.8724 127.802 26.5302 128.098 26.1147C128.395 25.6992 128.605 25.2225 128.753 24.697C128.889 24.1715 128.963 23.6338 128.963 23.0838C128.963 22.5461 128.889 22.0205 128.753 21.4828C128.617 20.945 128.395 20.4806 128.098 20.0651C127.802 19.6496 127.431 19.3196 126.974 19.0629C126.516 18.8063 125.972 18.6719 125.354 18.6719C124.737 18.6719 124.193 18.8063 123.736 19.0629C123.278 19.3196 122.907 19.6618 122.611 20.0651C122.314 20.4806 122.104 20.945 121.956 21.4828C121.82 22.0205 121.746 22.5461 121.746 23.0838C121.746 23.6338 121.82 24.1715 121.956 24.697C122.092 25.2225 122.314 25.6992 122.611 26.1147C122.907 26.5302 123.278 26.8724 123.736 27.1291C124.193 27.398 124.737 27.5202 125.354 27.5202ZM132.572 16.8264H134.685V13.0622H137.478V16.8264H140V18.8918H137.478V25.5892C137.478 25.8825 137.491 26.1269 137.516 26.3469C137.54 26.5547 137.602 26.738 137.689 26.8847C137.775 27.0313 137.911 27.1413 138.096 27.2146C138.282 27.288 138.517 27.3246 138.838 27.3246C139.036 27.3246 139.233 27.3246 139.431 27.3124C139.629 27.3002 139.827 27.2757 140.024 27.2269V29.3656C139.715 29.4023 139.406 29.4267 139.122 29.4634C138.826 29.5 138.529 29.5123 138.22 29.5123C137.478 29.5123 136.885 29.4389 136.44 29.3045C135.995 29.1701 135.637 28.9623 135.39 28.6934C135.13 28.4246 134.97 28.0946 134.871 27.6913C134.784 27.288 134.722 26.8235 134.71 26.3102V18.9163H132.597V16.8264H132.572Z"></path>
+  <path fill="#04DA8D" d="M33.5293 12.0503H20.7256L16.7708 0L12.8037 12.0503L0 12.0381L10.369 19.4932L6.40183 31.5313L16.7708 24.0884L27.1275 31.5313L23.1727 19.4932L33.5293 12.0503Z"></path>
+  <path fill="#000032" d="M24.0622 22.2185L23.1723 19.4932L16.7705 24.0884L24.0622 22.2185Z"></path>
+</svg>
+<span class="g">Se anmeldelser</span></a></div><div class="deliv">
+            <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h13v8H3zM16 10h3l2 3v2h-5z"></path><circle cx="7" cy="17" r="1.6"></circle><circle cx="18" cy="17" r="1.6"></circle></svg><span><b>Fri fragt</b> over 499 kr</span></div>
+            <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span><b>Hurtig levering</b> · 1-2 hverdage</span></div>
+            <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg><span><b>30 dages tilfredshedsgaranti</b> — eller pengene tilbage</span></div>
+            <div class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7v6h6M3 13a9 9 0 109-9"></path></svg><span><b>Nem retur</b> i 30 dage</span></div>
+          </div><div class="mq" data-hp-mq="">
+            <div class="mqtrack" style="--mq-duration: 220s"><div class="mqc"><img src="//hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=120" alt="Anmeldelse" srcset="//hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=60 60w, //hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Jeg købte en pude fra dem, og den var så behagelig. Før ville jeg stå op med ondt i nakken, men den her pude har fikset det — og den er meget behagelig at sove på.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><img src="//hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=120" alt="Taisia" srcset="//hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=60 60w, //hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Dejlig pude — jeg kan ikke sove uden den længere. Bestiller helt sikkert en til snart.</p><div class="nm">— Taisia</div></div>
+                  </div><div class="mqc"><img src="//hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=120" alt="Mahmoud" srcset="//hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=60 60w, //hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Fantastisk pude, som bare gør at jeg sover bedre i en tid med alt for meget varme i hjemmet!</p><div class="nm">— Mahmoud</div></div>
+                  </div><div class="mqc"><img src="//hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=120" alt="Xenia" srcset="//hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=60 60w, //hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Købte puden og har bare sovet bedre end nogensinde før.</p><div class="nm">— Xenia</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">F</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>MEGA lækker — allerbedste, kan kun anbefales. Virkelig wow.</p><div class="nm">— Fatima</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">H</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er seriøst verdens bedste pude.</p><div class="nm">— Hiba</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">I</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Virkelig behagelig pude!</p><div class="nm">— Imad</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">E</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Rigtig hurtig leveringstid. Har fået en del bedre søvn, siden jeg fik denne pude.</p><div class="nm">— Eskild</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Bedste pude.</p><div class="nm">— Mary</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">L</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget god kvalitet — kan klart anbefales.</p><div class="nm">— Lucas</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Vitterligt den bedste pude, jeg nogensinde har prøvet!</p><div class="nm">— Magnus</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">D</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er seriøst en vanvittig pude! Jeg rater den 5 stjerner.</p><div class="nm">— Diana</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">I</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Fremragende kundeservice, og hovedpuden har gjort mine nætter 10x bedre. Kan varmt anbefale.</p><div class="nm">— Isabella</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">J</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super fed pude — kan helt klart anbefales!</p><div class="nm">— Julie</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">G</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Den er virkelig god, og føles virkelig godt på min hud.</p><div class="nm">— Gaby</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">D</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er en elite pude — 100% køber igen.</p><div class="nm">— Daniel</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Sygt god — kunne ikke anbefales mere.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">A</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er en mega god pude, hold da op. Jeg sover så godt hver eneste aften — så behagelig og blød.</p><div class="nm">— Anna</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">C</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Virkelig god pude, fantastisk for min nakke. Sov som en baby!</p><div class="nm">— Celia</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Sindssygt god og behagelig. Ville 100% anbefale.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super god oplevelse og super god kvalitet!</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super behagelig kundeservice! Forstående og hjælpsom — service der faktisk hjælper.</p><div class="nm">— Martin</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">L</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>En helt fantastisk pude — jeg kan mærke en bedre nattesøvn efter at have købt denne.</p><div class="nm">— Lars</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>God pude og virkelig god kundeservice. Ville helt klart anbefale.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">C</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Dejlige puder, god service.</p><div class="nm">— Christian</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget tilfreds og hurtig levering.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Min kone og jeg købte jeres puder, og det har bare været det bedste køb.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Købte denne pude fra Hushly og har haft den bedste søvn lige siden. Pudens ene side er dejlig kølig — perfekt i det her ekstreme vejr.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Den perfekte pude i denne varme. Jeg er super tilfreds med mit køb.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget behagelig pude.</p><div class="nm">— Mathias</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">S</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Elsker lavendel og elsker puden — mega glad for den. Hurtig levering og god kundeservice!</p><div class="nm">— Sophie</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">Z</span><div><div class="ts" aria-hidden="true">★★★★☆</div><p>Rigtig fin pude.</p><div class="nm">— Zelina</div></div>
+                  </div><div class="mqc"><span class="pic pic--initial" aria-hidden="true">A</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Mega behagelig. Godt køb.</p><div class="nm">— Ayesha</div></div>
+                  </div><div class="mqc" aria-hidden="true"><img src="//hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=120" alt="Anmeldelse" srcset="//hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=60 60w, //hushly.dk/cdn/shop/files/white_2.png?v=1785161262&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Jeg købte en pude fra dem, og den var så behagelig. Før ville jeg stå op med ondt i nakken, men den her pude har fikset det — og den er meget behagelig at sove på.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><img src="//hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=120" alt="Taisia" srcset="//hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=60 60w, //hushly.dk/cdn/shop/files/cover_1.png?v=1785160982&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Dejlig pude — jeg kan ikke sove uden den længere. Bestiller helt sikkert en til snart.</p><div class="nm">— Taisia</div></div>
+                  </div><div class="mqc" aria-hidden="true"><img src="//hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=120" alt="Mahmoud" srcset="//hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=60 60w, //hushly.dk/cdn/shop/files/testimonial_v3_2.png?v=1785160184&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Fantastisk pude, som bare gør at jeg sover bedre i en tid med alt for meget varme i hjemmet!</p><div class="nm">— Mahmoud</div></div>
+                  </div><div class="mqc" aria-hidden="true"><img src="//hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=120" alt="Xenia" srcset="//hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=60 60w, //hushly.dk/cdn/shop/files/cover_3.png?v=1785160982&amp;width=120 120w" width="120" height="150" loading="lazy" class="pic" sizes="52px">
+<div><div class="ts" aria-hidden="true">★★★★★</div><p>Købte puden og har bare sovet bedre end nogensinde før.</p><div class="nm">— Xenia</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">F</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>MEGA lækker — allerbedste, kan kun anbefales. Virkelig wow.</p><div class="nm">— Fatima</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">H</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er seriøst verdens bedste pude.</p><div class="nm">— Hiba</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">I</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Virkelig behagelig pude!</p><div class="nm">— Imad</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">E</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Rigtig hurtig leveringstid. Har fået en del bedre søvn, siden jeg fik denne pude.</p><div class="nm">— Eskild</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Bedste pude.</p><div class="nm">— Mary</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">L</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget god kvalitet — kan klart anbefales.</p><div class="nm">— Lucas</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Vitterligt den bedste pude, jeg nogensinde har prøvet!</p><div class="nm">— Magnus</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">D</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er seriøst en vanvittig pude! Jeg rater den 5 stjerner.</p><div class="nm">— Diana</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">I</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Fremragende kundeservice, og hovedpuden har gjort mine nætter 10x bedre. Kan varmt anbefale.</p><div class="nm">— Isabella</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">J</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super fed pude — kan helt klart anbefales!</p><div class="nm">— Julie</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">G</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Den er virkelig god, og føles virkelig godt på min hud.</p><div class="nm">— Gaby</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">D</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er en elite pude — 100% køber igen.</p><div class="nm">— Daniel</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Sygt god — kunne ikke anbefales mere.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">A</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Det er en mega god pude, hold da op. Jeg sover så godt hver eneste aften — så behagelig og blød.</p><div class="nm">— Anna</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">C</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Virkelig god pude, fantastisk for min nakke. Sov som en baby!</p><div class="nm">— Celia</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Sindssygt god og behagelig. Ville 100% anbefale.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super god oplevelse og super god kvalitet!</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Super behagelig kundeservice! Forstående og hjælpsom — service der faktisk hjælper.</p><div class="nm">— Martin</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">L</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>En helt fantastisk pude — jeg kan mærke en bedre nattesøvn efter at have købt denne.</p><div class="nm">— Lars</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>God pude og virkelig god kundeservice. Ville helt klart anbefale.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">C</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Dejlige puder, god service.</p><div class="nm">— Christian</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget tilfreds og hurtig levering.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Min kone og jeg købte jeres puder, og det har bare været det bedste køb.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Købte denne pude fra Hushly og har haft den bedste søvn lige siden. Pudens ene side er dejlig kølig — perfekt i det her ekstreme vejr.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">✓</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Den perfekte pude i denne varme. Jeg er super tilfreds med mit køb.</p><div class="nm">— Verificeret køber</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">M</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Meget behagelig pude.</p><div class="nm">— Mathias</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">S</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Elsker lavendel og elsker puden — mega glad for den. Hurtig levering og god kundeservice!</p><div class="nm">— Sophie</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">Z</span><div><div class="ts" aria-hidden="true">★★★★☆</div><p>Rigtig fin pude.</p><div class="nm">— Zelina</div></div>
+                  </div><div class="mqc" aria-hidden="true"><span class="pic pic--initial" aria-hidden="true">A</span><div><div class="ts" aria-hidden="true">★★★★★</div><p>Mega behagelig. Godt køb.</p><div class="nm">— Ayesha</div></div>
+                  </div></div>
+          </div><div class="hpsticky" data-hp-sticky="">
+            <div class="hpsticky__in"><img src="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=120" alt="" srcset="//hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=88 88w, //hushly.dk/cdn/shop/files/0020.jpg?v=1782474615&amp;width=120 120w" width="120" height="120" loading="lazy" class="hpsticky__img" sizes="44px">
+<div class="hpsticky__txt">
+                <span class="hpsticky__name">PerfectPillow</span>
+                <span class="hpsticky__price" data-hp-sticky-now="">998 kr</span>
+              </div>
+              <button type="submit" class="hpsticky__cta" data-hp-sticky-atc="">Tilføj til kurv</button>
+            </div>
+          </div></form><div class="details"><div class="dblock"><h3 class="dh">Om puden</h3><div class="dp rte"><p>Hushly PerfectPillow er bygget til at gøre din seng til husets roligste sted. Den ene side er en kølende is-silke, der leder varmen væk på varme nætter — den anden en blød, åndbar bambus-side til de kølige. Indeni former et justérbart fyld af lavendel-infunderet memory foam og blødt fiberfyld sig efter din nakke, så du selv tilpasser højde og fasthed — og et strejf lavendel hjælper dig med at lande efter dagen.</p></div>
+          </div><div class="dblock"><h3 class="dh">Specifikationer</h3><dl class="spec"><div><dt>Sider</dt><dd>2-i-1 · is-silke + bambus</dd></div><div><dt>Fyld</dt><dd>Justérbart fyld: lavendel-memory foam + fiber</dd></div><div><dt>Betræk</dt><dd>Is-silke + åndbar bambus-strik</dd></div><div><dt>Størrelse</dt><dd>50 × 70 cm</dd></div><div><dt>Højde / fasthed</dt><dd>Justérbar — tilpas selv</dd></div><div><dt>Vask</dt><dd>Aftageligt betræk, vask v. 40°</dd></div></dl>
+          </div></div>
 
     </div>
   </div>
 </div>
 
-<style>
-  /* Base styles */
+<style data-shopify="">
+  /* ---- Sticky add-to-cart bar (mobile) ---- */
+  .hpsticky{ position:fixed; left:0; right:0; bottom:0; z-index:60; background:var(--surface); border-top:1px solid var(--line); box-shadow:0 -8px 28px -14px rgba(38,42,86,.28); padding:10px var(--gutter,16px); padding-bottom:calc(10px + env(safe-area-inset-bottom)); transform:translateY(115%); visibility:hidden; transition:transform .32s cubic-bezier(.4,0,.2,1), visibility .32s; }
+  .hpsticky.is-visible{ transform:none; visibility:visible; }
+  .hpsticky__in{ display:flex; align-items:center; gap:12px; max-width:760px; margin-inline:auto; }
+  .hpsticky__img{ width:44px; height:44px; border-radius:10px; object-fit:cover; flex:none; border:1px solid var(--line); }
+  .hpsticky__txt{ display:flex; flex-direction:column; min-width:0; line-height:1.15; }
+  .hpsticky__name{ font-family:var(--sans); font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .hpsticky__price{ font-family:var(--disp); font-weight:600; font-size:16px; color:var(--ink); }
+  .hpsticky__cta{ margin-inline-start:auto; flex:none; border:0; cursor:pointer; background:var(--ink); color:#fff; font-family:var(--sans); font-weight:600; font-size:15px; padding:13px 22px; border-radius:999px; white-space:nowrap; transition:transform .15s ease, background .15s; }
+  .hpsticky__cta:hover{ background:#1d2047; }
+  .hpsticky__cta:active{ transform:scale(.97); }
+  .hpsticky__cta:focus-visible{ outline:none; box-shadow:0 0 0 3px var(--lav); }
+  @media (prefers-reduced-motion: reduce){ .hpsticky{ transition:none; } }
+  @media (min-width:860px){ .hpsticky{ display:none; } }
+
   .hushly-pdp {
     --ink:#262A56; --iris:#6E5FBE; --lav:#A294D6; --lav-soft:#C7BCE8;
     --mist:#F3F0FB; --lilac:#ECE7F8; --bg:#FBFAFE; --surface:#FFFFFF;
@@ -343,10 +329,31 @@
     background: radial-gradient(120% 120% at 32% 22%, #F6F3FC 0%, #EAE3F6 58%, #E1D8F1 100%);
     display: flex; align-items: center; justify-content: center; }
   .hushly-pdp .main-img { width: 100%; height: 100%; object-fit: cover; }
+  .hushly-pdp .pillow { width: 76%; height: 55%; border-radius: 30px 30px 28px 28px; background: #fff; transform: rotate(-4deg);
+    box-shadow: 0 34px 60px -26px rgba(38,42,86,.42);
+    background-image: radial-gradient(circle, #D9E8F6 1.7px, transparent 1.8px); background-size: 17px 17px; background-position: center; }
+  /* Gallery — MOBILE: peek slider (separate, rounded slides). DESKTOP: single image, thumbnails switch. */
   .hushly-pdp .main--carousel { aspect-ratio: auto; border-radius: 0; overflow: visible; border: none; background: none; display: block; }
-  .hushly-pdp .mainscroll { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .hushly-pdp .mainscroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
   .hushly-pdp .mainscroll::-webkit-scrollbar { display: none; }
-  .hushly-pdp .mainslide { position: relative; flex: 0 0 86%; aspect-ratio: 1/1; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(120% 120% at 32% 22%, #F6F3FC 0%, #EAE3F6 58%, #E1D8F1 100%); scroll-snap-align: start; }
+  .hushly-pdp .mainslide {
+    position: relative;
+    flex: 0 0 86%;
+    aspect-ratio: 1/1;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: radial-gradient(120% 120% at 32% 22%, #F6F3FC 0%, #EAE3F6 58%, #E1D8F1 100%);
+    scroll-snap-align: start;
+  }
   @media (min-width: 860px) {
     .hushly-pdp .buybox { max-width: 520px; }
     .hushly-pdp__grid { column-gap: 64px; }
@@ -355,69 +362,126 @@
     .hushly-pdp .mainslide { position: absolute; inset: 0; flex: none; width: 100%; height: 100%; aspect-ratio: auto; border-radius: 0; border: none; background: none; opacity: 0; transition: opacity .3s ease; }
     .hushly-pdp .mainslide.is-active { opacity: 1; }
   }
-
-  /* Slide USPS */
-  .hushly-pdp .slide-usps { position: absolute; inset-block-start: 16px; inset-block-end: auto; inset-inline: 16px; z-index: 2; display: flex; flex-wrap: wrap; row-gap: 6px; pointer-events: none; }
-  .hushly-pdp .su { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,.96); color: var(--ink); font-family: var(--disp); font-weight: 600; font-size: 14px; padding: 8px 14px; border-radius: 999px; white-space: normal; flex: 0 0 auto; max-width: 100%; box-shadow: 0 4px 14px -6px rgba(38,42,86,.45); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
-  .hushly-pdp .su svg { width: 16px; height: 16px; color: var(--iris); flex: none; }
+  /* Two pills side by side; they wrap onto a second line rather than being cut
+     off by the slide's overflow:hidden when the wording is long or the phone narrow. */
+  .hushly-pdp .slide-usps { position: absolute; inset-inline: 12px; inset-block-end: 12px; z-index: 2; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start; gap: 6px; pointer-events: none; }
+  .hushly-pdp .su { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,.93); color: var(--ink); font-family: var(--disp); font-weight: 600; font-size: 11px; line-height: 1; padding: 5px 9px; border-radius: 999px; white-space: nowrap; box-shadow: 0 3px 12px -6px rgba(38,42,86,.4); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .hushly-pdp .su svg { width: 13px; height: 13px; color: var(--iris); flex: none; }
   @media (max-width: 859px) {
-    .hushly-pdp .slide-usps { inset-block-start: 10px; inset-inline: 10px; gap: 5px; }
-    .hushly-pdp .su { font-size: 12px; padding: 6px 9px; gap: 5px; }
-    .hushly-pdp .su svg { width: 14px; height: 14px; }
+    .hushly-pdp .slide-usps { inset-block-end: 9px; inset-inline: 9px; gap: 5px; }
+    .hushly-pdp .su { font-size: 11px; padding: 4px 7px; gap: 4px; }
+    .hushly-pdp .su svg { width: 12px; height: 12px; }
   }
+  @media (min-width: 860px) {
+    .hushly-pdp .slide-usps { inset-inline: 16px; inset-block-end: 16px; gap: 8px; }
+    .hushly-pdp .su { font-size: 14px; padding: 8px 14px; gap: 7px; }
+    .hushly-pdp .su svg { width: 16px; height: 16px; }
+  }
+  .hushly-pdp .burg { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; padding: 3px 8px; border: 1px solid #F2E2BE; border-radius: 999px; background: #FDF7EA; color: #9A6B12; font-family: var(--disp); font-weight: 600; font-size: 11px; line-height: 1.25; }
+  .hushly-pdp .burg svg { width: 12px; height: 12px; flex: none; }
+  @media (max-width: 380px) { .hushly-pdp .burg { font-size: 11px; padding: 3px 7px; } }
 
-  /* Buybox Typography */
+  .hushly-pdp .offerurg { display: flex; align-items: center; gap: 11px; margin: 16px 0 0; padding: 11px 13px; border: 1px solid var(--lilac); border-radius: 14px; background: var(--mist); color: var(--ink); }
+  .hushly-pdp .offerurg__ico { flex: none; display: inline-flex; color: var(--iris, #6E5FBE); }
+  .hushly-pdp .offerurg__ico svg { width: 20px; height: 20px; }
+  .hushly-pdp .offerurg__txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .hushly-pdp .offerurg__head { font-family: var(--disp); font-weight: 600; font-size: 14px; line-height: 1.35; }
+  .hushly-pdp .offerurg__sub { font-size: 12px; line-height: 1.35; color: var(--muted); }
+  .hushly-pdp .offerurg__left { margin-inline-start: auto; flex: none; font-family: var(--disp); font-weight: 600; font-size: 12px; line-height: 1; padding: 6px 10px; border-radius: 999px; background: var(--iris); color: #fff; white-space: nowrap; }
+  @media (max-width: 420px) {
+    .hushly-pdp .offerurg { gap: 9px; padding: 10px 11px; }
+    .hushly-pdp .offerurg__head { font-size: 13px; }
+    .hushly-pdp .offerurg__left { font-size: 11px; padding: 5px 8px; }
+  }
+  /* Each colour picker is its own row. The container used to be a single
+     flex row, so the second picker wrapped into the middle of the first. */
+  .hushly-pdp .addoncolor__slot { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+  .hushly-pdp .addoncolor__slot[hidden] { display: none; }
+  .hushly-pdp .addoncolor__slot2 { padding-top: 12px; border-top: 1px solid var(--line); }
+
+  .hushly-pdp .thumbs { display: flex; gap: 9px; margin-top: 9px; padding-block: 3px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .hushly-pdp .thumbs::-webkit-scrollbar { display: none; }
+  .hushly-pdp .thumb { flex: 0 0 auto; width: 60px; height: 60px; border-radius: 13px; border: 1.5px solid var(--line); background: var(--mist); cursor: pointer; padding: 0;
+    display: flex; align-items: center; justify-content: center; color: var(--lav); transition: .15s; overflow: hidden; }
+  .hushly-pdp .thumb svg { width: 24px; height: 24px; }
+  .hushly-pdp .thumb-img { width: 100%; height: 100%; object-fit: cover; }
+  .hushly-pdp .thumb.dots { background: #fff; background-image: radial-gradient(circle, #D9E8F6 1.4px, transparent 1.5px); background-size: 11px 11px; }
+  .hushly-pdp .thumb.dotsv { background: #fff; background-image: radial-gradient(circle, #E4DBF4 1.4px, transparent 1.5px); background-size: 11px 11px; }
+  .hushly-pdp .thumb.active { border-color: var(--iris); box-shadow: none; }
+  .hushly-pdp .thumb:focus-visible { outline: none; border-color: var(--iris); box-shadow: 0 0 0 3px var(--lilac); }
+
+  /* Buy box */
   .hushly-pdp .kicker { display: flex; align-items: center; gap: 9px; font-family: var(--sans); font-weight: 600; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--iris); margin-bottom: 10px; }
   .hushly-pdp .kicker .wm { display: none; }
   .hushly-pdp .kicker .wm .pd { color: var(--lav); }
-  .hushly-pdp .title { font-family: var(--disp); font-weight: 600; font-size: 34px; letter-spacing: -.025em; line-height: 1.06; color: var(--ink); margin: 0; }
+  .hushly-pdp .kicker .kd { display: none; }
+  .hushly-pdp .title { font-family: var(--disp); font-weight: 600; font-size: 34px; letter-spacing: -.025em; line-height: 1.06; color: var(--ink); }
   .hushly-pdp .title .tm { display: none; }
   .hushly-pdp .hook { font-family: var(--disp); font-weight: 600; font-size: 20px; color: var(--ink); letter-spacing: -.01em; line-height: 1.25; margin-top: 8px; }
   .hushly-pdp .sub { color: var(--muted); font-size: 16px; line-height: 1.55; margin-top: 8px; }
-  
-  /* Badges */
-  .hushly-pdp .sides { display: flex; align-items: center; gap: 8px; margin-top: 16px; flex-wrap: wrap !important; }
-  .hushly-pdp .sbadge { display: inline-flex; align-items: center; gap: 7px; font-family: var(--disp); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; border: 1.4px solid; line-height: 1; white-space: nowrap !important; flex: 0 0 auto !important; }
+  .hushly-pdp .sides { display: flex; align-items: center; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .hushly-pdp .sbadge { display: inline-flex; align-items: center; gap: 7px; font-family: var(--disp); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; border: 1.4px solid; line-height: 1; }
   .hushly-pdp .sbadge svg { width: 16px; height: 16px; flex: none; }
   .hushly-pdp .sbadge--cool { color: #2f6db0; border-color: #c4e2f4; background: #eef7fd; }
   .hushly-pdp .sbadge--lav { color: var(--iris); border-color: var(--lilac); background: var(--mist); }
-  .hushly-pdp .sides-mid { display: none; white-space: nowrap !important; flex: 0 0 auto !important; }
-  @media (max-width: 859px) { .hushly-pdp .sides { gap: 6px; } .hushly-pdp .sbadge { font-size: 11.5px; padding: 6px 10px; gap: 5px; } .hushly-pdp .sbadge svg { width: 13px; height: 13px; } }
+  .hushly-pdp .sides-mid { display: none; }
 
-  /* Price */
+  .hushly-pdp hr.div { border: none; border-top: 1px solid var(--line); margin: 18px 0; }
+
+  .hushly-pdp .usps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; margin-top: 20px; }
+  .hushly-pdp .usp { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; font-weight: 400; line-height: 1.35; }
+  .hushly-pdp .usp .i { flex: 0 0 auto; width: 32px; height: 32px; border-radius: 9px; background: var(--mist); display: flex; align-items: center; justify-content: center; color: var(--iris); }
+  .hushly-pdp .usp .i svg { width: 18px; height: 18px; }
+  @media (min-width: 1024px) {
+    .hushly-pdp .usps { gap: 13px 22px; }
+    .hushly-pdp .usp { font-size: 16px; gap: 12px; }
+    .hushly-pdp .usp .i { width: 38px; height: 38px; border-radius: 10px; }
+    .hushly-pdp .usp .i svg { width: 21px; height: 21px; }
+  }
+
   .hushly-pdp .price { display: flex; align-items: baseline; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
   .hushly-pdp .price .now { font-family: var(--disp); font-weight: 600; font-size: 30px; letter-spacing: -.015em; }
   .hushly-pdp .price .was { font-size: 16px; color: var(--muted); text-decoration: line-through; }
   .hushly-pdp .price .save { font-size: 12px; font-weight: 600; color: #fff; background: var(--iris); padding: 4px 10px; border-radius: 999px; align-self: center; }
+  .hushly-pdp .pricesub { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-top: 8px; flex-wrap: wrap; }
+  .hushly-pdp .pricesub .pfree { display: inline-flex; align-items: center; gap: 5px; }
+  .hushly-pdp .pricesub .trucksm { width: 16px; height: 16px; color: var(--iris); flex: 0 0 auto; }
+  .hushly-pdp .pricesub .psep { color: var(--lav-soft); }
+  .hushly-pdp .pricesub .flagsm { width: 15px; height: 11px; border-radius: 2px; flex: 0 0 auto; }
 
-  /* Buttons */
-  .hushly-pdp .cta, .hushly-pdp .hpsticky__cta {
-    background: linear-gradient(105deg, #A78DF7 0%, #8571E4 26%, #5F51B4 58%, #2C2E5C 100%) !important;
-    border: none !important; color: #fff !important; width: 100%; border-radius: 14px;
-    font-family: var(--disp); font-weight: 600; font-size: 16px; padding: 19px; margin-top: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px;
-    box-shadow: 0 12px 26px -10px rgba(110,95,190,.62) !important;
-    transition: filter .2s ease, box-shadow .2s ease, transform .18s ease !important;
-  }
-  .hushly-pdp .cta:hover, .hushly-pdp .hpsticky__cta:hover {
-    filter: brightness(1.08) saturate(1.06) !important; box-shadow: 0 14px 30px -8px rgba(110,95,190,.75) !important; transform: translateY(-1px) !important;
-  }
-  .hushly-pdp .cta svg { width: 18px; height: 18px; color: #fff !important; transition: .18s; }
-  .hushly-pdp .cta:hover svg { transform: translateX(3px); }
-
-  /* Thumbnails, USPS, Bundles CSS omitted for brevity but they are standard based on provided HTML */
-  /* Re-implementing exactly as provided */
-  .hushly-pdp .usps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; margin-top: 20px; }
-  .hushly-pdp .usp { display: flex; align-items: flex-start; gap: 10px; font-size: 16px; font-weight: 400; line-height: 1.35; }
-  .hushly-pdp .usp .i { width: var(--usp-box, 38px); height: var(--usp-box, 38px); border-radius: calc(var(--usp-box, 38px) * .26); flex: 0 0 auto; }
-  .hushly-pdp .usp .i .uspimg { width: 100%; height: 100%; object-fit: contain; display: block; }
-  
   .hushly-pdp .bundles { display: grid; gap: 10px; margin-top: 20px; }
   .hushly-pdp .bundle { position: relative; display: flex; align-items: center; gap: 13px; border: 1px solid var(--line); border-radius: 14px; padding: 13px 15px; cursor: pointer; background: var(--surface); transition: .15s; margin: 0; }
-  .hushly-pdp .bundle.sel { border-color: var(--iris); background: var(--mist); }
+  .hushly-pdp .bundle:hover { border-color: var(--lav-soft); }
+  .hushly-pdp .bundle.sel { border-color: var(--iris); background: var(--mist); box-shadow: none; }
+  .hushly-pdp .hushly-pdp__br { position: absolute; opacity: 0; pointer-events: none; }
   .hushly-pdp .radio { flex: 0 0 auto; width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--lav-soft); position: relative; }
   .hushly-pdp .bundle.sel .radio { border-color: var(--iris); }
   .hushly-pdp .bundle.sel .radio::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; background: var(--iris); }
-  .hushly-pdp .bthumb { flex: 0 0 auto; width: 60px; height: 60px; border-radius: 12px; background: #fff; border: 1px solid var(--line); object-fit: cover; }
+  .hushly-pdp .bthumb { flex: 0 0 auto; width: 60px; height: 60px; border-radius: 12px; background: #fff; border: 1px solid var(--line); object-fit: cover;
+    background-image: radial-gradient(circle, #D9E8F6 1.5px, transparent 1.6px); background-size: 12px 12px; }
+  .hushly-pdp .bthumb--img { background-image: none; }
+  .hushly-pdp .bthumb.betr { background: linear-gradient(135deg, #5b6cc4, #3a3e6e); background-image: none; }
+  .hushly-pdp .addoncolor { margin: 12px 0 0; padding: 11px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--mist); display: grid; gap: 10px; }
+  .hushly-pdp .addoncolor[hidden] { display: none; }
+  .hushly-pdp .addoncolor__lab { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .hushly-pdp .addoncolor__opts { display: flex; gap: 8px; flex-wrap: wrap; }
+  .hushly-pdp .addoncolor__opt { position: relative; display: inline-flex; align-items: center; gap: 7px; padding: 6px 13px 6px 9px; border: 1px solid var(--line); border-radius: 999px; background: #fff; cursor: pointer; font-size: 14px; }
+  .hushly-pdp .addoncolor__opt input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+  .hushly-pdp .addoncolor__opt.sel { border-color: var(--iris); box-shadow: none; }
+  .hushly-pdp .addoncolor__opt:focus-within { border-color: var(--iris); box-shadow: 0 0 0 3px var(--lilac); }
+  .hushly-pdp .addoncolor__sw { width: 18px; height: 18px; border-radius: 50%; background: var(--sw, #ddd); border: 1px solid rgba(38,42,86,.18); display: inline-block; }
+  .hushly-pdp .addoncolor__nm { font-weight: 400; }
+  .hushly-pdp .mainaddon { position: absolute; inset: 0; z-index: 3; background: var(--surface); }
+  .hushly-pdp .mainaddon[hidden] { display: none; }
+  .hushly-pdp .mainaddon__slide { display: none; width: 100%; height: 100%; }
+  .hushly-pdp .mainaddon__slide.is-active { display: block; }
+  .hushly-pdp .mainaddon__slide .main-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hushly-pdp .ratingrow { display: inline-flex; align-items: center; gap: 8px; margin: 16px 0 0; }
+  .hushly-pdp .ratingrow__stars { color: #E8B53A; font-size: 15px; letter-spacing: 1px; }
+  .hushly-pdp .ratingrow__txt { font-size: 14px; color: var(--muted); }
+  .hushly-pdp .ratingrow__txt b { color: var(--ink); font-weight: 600; }
+  .hushly-pdp .trialstripe { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 2px 0 10px; padding: 9px 12px; background: var(--mist); border-radius: 10px; font-size: 12px; font-weight: 500; color: var(--ink); text-align: center; }
+  .hushly-pdp .trialstripe svg { width: 16px; height: 16px; color: #2EA86A; flex: none; }
   .hushly-pdp .bmid { flex: 1; min-width: 0; }
   .hushly-pdp .bmid .bt { font-family: var(--disp); font-weight: 600; font-size: 16px; }
   .hushly-pdp .bmid .bd { font-size: 12px; color: var(--muted); margin-top: 1px; }
@@ -425,189 +489,99 @@
   .hushly-pdp .bright .bp { font-family: var(--disp); font-weight: 600; font-size: 16px; }
   .hushly-pdp .bright .bw { font-size: 12px; color: var(--muted); text-decoration: line-through; }
   .hushly-pdp .tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; vertical-align: middle; margin-left: 8px; background: var(--ink); color: #fff; }
+  .hushly-pdp .tag.pop { background: var(--ink); color: #fff; }
   .hushly-pdp .tag.val { background: var(--lilac); color: var(--iris); }
 
-  .hushly-pdp .shipmsg { display: flex; align-items: center; gap: 9px; margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; background: var(--mist); border: 1px solid var(--line); font-size: 13px; line-height: 1.4; color: var(--ink); }
-  .hushly-pdp .shipmsg__dot { width:9px; height:9px; border-radius:50%; background:var(--green); flex:0 0 auto; box-shadow:0 0 0 3px color-mix(in srgb, var(--green) 18%, transparent); }
-  .hushly-pdp .offerurg { display: flex; align-items: center; gap: 11px; margin: 16px 0 0; padding: 11px 13px; border: 1px solid var(--lilac); border-radius: 14px; background: var(--mist); color: var(--ink); }
-  
+  .hushly-pdp .stock { display: flex; align-items: center; gap: 9px; font-size: 14px; margin-top: 14px; color: var(--ink); }
+  .hushly-pdp .gdot { width: 9px; height: 9px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 4px rgba(46,168,106,.16); }
+  .hushly-pdp .stock b { font-weight: 600; }
+  .hushly-pdp .stock .mut { color: var(--muted); }
+
+  .hushly-pdp .cta { width: 100%; border: none; border-radius: 14px; background: var(--ink); color: #fff; font-family: var(--disp); font-weight: 600; font-size: 16px; padding: 19px; margin-top: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; box-shadow: none; transition: background .18s; }
+  .hushly-pdp .cta:hover { background: #1C2046; transform: none; }
+  .hushly-pdp .cta svg { width: 18px; height: 18px; transition: .18s; }
+  .hushly-pdp .cta:hover svg { transform: translateX(3px); }
+  .hushly-pdp .cta[disabled] { opacity: .5; cursor: not-allowed; }
+  .hushly-pdp .cta[aria-disabled="true"] { opacity: .6; pointer-events: none; }
+  .hushly-pdp__err { color: #B3261E; font-size: 12px; text-align: center; margin-top: 8px; }
+  .hushly-pdp .ctasub { display: none; }
+  .hushly-pdp .ctasub svg { width: 14px; height: 14px; color: var(--iris); }
+
   .hushly-pdp .trustrow { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-top: 16px; }
   .hushly-pdp .pays { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .hushly-pdp .pays svg { height: 24px; width: auto; border-radius: 5px; }
-  
+  .hushly-pdp .tp { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; color: var(--muted); text-decoration: none; }
+  .hushly-pdp .tp .tp__logo { height: 21px; width: auto; display: block; }
+  .hushly-pdp .tp .g { color: var(--muted); }
+  .hushly-pdp .tp:hover .g { color: var(--ink); }
+
   .hushly-pdp .deliv { margin-top: 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--mist); padding: 15px 16px; display: grid; gap: 12px; }
   .hushly-pdp .di { display: flex; align-items: center; gap: 11px; font-size: 14px; line-height: 1.35; color: var(--muted); }
   .hushly-pdp .di svg { width: 18px; height: 18px; color: var(--iris); stroke-width: 1.6; flex: 0 0 auto; }
+  .hushly-pdp .di b { color: var(--ink); font-weight: 600; }
 
-  /* Details Accordion */
-  .hushly-pdp .details { margin-top: 40px; }
-  .hushly-pdp .dblock { padding: 20px 0; border-top: 1px solid var(--line); }
+  .hushly-pdp .shipmsg { display: flex; align-items: center; gap: 9px; margin: 14px 0 0; padding: 10px 14px; border-radius: 12px; background: var(--mist); border: 1px solid var(--line); font-size: 13px; line-height: 1.4; color: var(--ink); }
+  .hushly-pdp .shipmsg__dot { width:9px; height:9px; border-radius:50%; background:var(--green); flex:0 0 auto; box-shadow:0 0 0 3px color-mix(in srgb, var(--green) 18%, transparent); }
+  /* Desktop has room for one line once the type is 12px; phones still wrap. */
+  .hushly-pdp .shipmsg__body { min-width: 0; }
+  @media (min-width: 860px) {
+    .hushly-pdp .shipmsg { font-size: 12px; padding: 9px 13px; }
+    .hushly-pdp .shipmsg__body { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  }
+  .hushly-pdp .shipmsg__stock { font-weight:600; color:var(--ink); }
+  .hushly-pdp .shipmsg__sep { opacity:.4; }
+  .hushly-pdp .shipmsg .ship-today { color:var(--green); font-weight:600; }
+  .hushly-pdp .shipmsg .ship-today strong { color:var(--green); font-weight:600; font-variant-numeric:tabular-nums; }
+  .hushly-pdp .shipmsg .ship-sep { opacity:.4; margin:0 3px; }
+
+  /* testimonial marquee */
+  .hushly-pdp .mq { overflow: hidden; margin-top: 18px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+  .hushly-pdp .mqtrack { display: flex; gap: 14px; width: max-content; animation: hushly-pdp-mq var(--mq-duration, 40s) linear infinite; }
+  .hushly-pdp .mq:hover .mqtrack, .hushly-pdp .mq:focus-within .mqtrack { animation-play-state: paused; }
+  @keyframes hushly-pdp-mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .hushly-pdp .mqc { flex: 0 0 auto; width: 296px; display: flex; gap: 12px; align-items: center; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); padding: 12px 14px; }
+  .hushly-pdp .mqc .pic { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 11px; object-fit: cover; background: linear-gradient(135deg, #cdbff0, #a99fd6); }
+  .hushly-pdp .mqc .pic--initial { display: flex; align-items: center; justify-content: center; font-family: var(--disp); font-weight: 600; font-size: 21px; color: #fff; }
+  .hushly-pdp .mqc .ts { color: var(--gold); font-size: 12px; letter-spacing: .5px; }
+  .hushly-pdp .mqc p { font-size: 12px; line-height: 1.45; margin: 3px 0 4px; }
+  .hushly-pdp .mqc .nm { font-size: 12px; font-weight: 600; color: var(--muted); }
+
+  /* videos */
   .hushly-pdp .dh { font-family: var(--disp); font-weight: 600; font-size: 17px; margin-bottom: 11px; }
+  .hushly-pdp .vgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .hushly-pdp .vgrid--1 { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+  .hushly-pdp .vid { position: relative; aspect-ratio: 2/3; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(120% 120% at 30% 18%, #EFEAF9, #D8CDF0); }
+  .hushly-pdp .vgrid--1 .vid { aspect-ratio: 4/5; }
+  .hushly-pdp .vid-el { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hushly-pdp .vid .vplay { position: absolute; inset: 0; margin: auto; width: 54px; height: 54px; border: none; padding: 0; cursor: pointer; border-radius: 50%; background: var(--iris); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px -8px rgba(110,95,190,.6); transition: transform .15s, background-color .15s; }
+  .hushly-pdp .vid .vplay:hover { transform: translateY(-1px); background: #5b4fb0; }
+  .hushly-pdp .vid .vplay:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--lilac); }
+  .hushly-pdp .vid .vplay svg { width: 20px; height: 20px; color: #fff; margin-left: 3px; }
+  .hushly-pdp .vid.is-playing .vplay { display: none; }
+  .hushly-pdp .vid .vlabel { position: absolute; left: 12px; bottom: 11px; font-size: 12px; font-weight: 600; color: #fff; text-shadow: 0 1px 5px rgba(0,0,0,.45); pointer-events: none; }
+
+  /* details */
+  .hushly-pdp .dblock { padding: 20px 0; border-top: 1px solid var(--line); }
+  .hushly-pdp .dblock:first-child { padding-top: 6px; border-top: none; }
   .hushly-pdp .dp { font-size: 14px; color: var(--muted); line-height: 1.65; }
+  .hushly-pdp .dp p + p { margin-top: 12px; }
   .hushly-pdp .spec { display: grid; }
   .hushly-pdp .spec > div { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .hushly-pdp .spec > div:last-child { border-bottom: none; }
   .hushly-pdp .spec dt { color: var(--muted); }
-  .hushly-pdp .spec dd { font-weight: 600; text-align: right; margin: 0; }
-  
+  .hushly-pdp .spec dd { font-weight: 600; text-align: right; }
+
   @media (max-width: 860px) {
     .hushly-pdp__grid { grid-template-columns: 1fr; grid-template-rows: none; grid-template-areas: "gallery" "buybox" "details"; row-gap: 24px; }
     .hushly-pdp .title { font-size: 32px; }
     .hushly-pdp .hook { font-size: 18px; }
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hushly-pdp .mqtrack { animation: none; }
+    .hushly-pdp .cta, .hushly-pdp .cta svg, .hushly-pdp .thumb, .hushly-pdp .bundle { transition: none; }
+  }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Gallery Thumbnails
-    const thumbs = document.querySelectorAll('[data-hp-thumb]');
-    const slides = document.querySelectorAll('[data-hp-slide]');
-    thumbs.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        thumbs.forEach(t => t.classList.remove('active'));
-        slides.forEach(s => s.classList.remove('is-active'));
-        thumb.classList.add('active');
-        slides[thumb.dataset.index].classList.add('is-active');
-      });
-    });
 
-    // Bundle Radio Logic
-    const bundles = document.querySelectorAll('.bundle');
-    const addonSection = document.querySelector('[data-hp-addon-colors]');
-    bundles.forEach(bundle => {
-      bundle.addEventListener('click', () => {
-        bundles.forEach(b => b.classList.remove('sel'));
-        bundle.classList.add('sel');
-        bundle.querySelector('input').checked = true;
-        
-        if(bundle.dataset.addon === 'true') {
-          addonSection.hidden = false;
-        } else {
-          addonSection.hidden = true;
-        }
-      });
-    });
-  });
-</script>
-
-{% schema %}
-{
-  "name": "Main Product",
-  "settings": [
-    {
-      "type": "checkbox",
-      "id": "show_image_usps",
-      "label": "Show USPS on images",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "show_sticky_cta",
-      "label": "Show Sticky Add to Cart (Mobile)",
-      "default": true
-    }
-  ],
-  "blocks": [
-    { "type": "@app" },
-    {
-      "type": "kicker",
-      "name": "Kicker",
-      "settings": [
-        { "type": "text", "id": "text", "label": "text", "default": "Nordisk søvn · designet til ro" }
-      ]
-    },
-    {
-      "type": "title",
-      "name": "Product Title",
-      "limit": 1
-    },
-    {
-      "type": "hook",
-      "name": "Hook Line",
-      "settings": [
-        { "type": "text", "id": "text", "label": "text", "default": "To sider. Én perfekt nat." }
-      ]
-    },
-    {
-      "type": "subtext",
-      "name": "Subtext",
-      "settings": [
-        { "type": "text", "id": "text", "label": "text", "default": "Kølig is-silke til varme nætter, blød bambus til de kølige — og et strejf lavendel, når du skal falde til ro." }
-      ]
-    },
-    {
-      "type": "badges",
-      "name": "2-in-1 Badges",
-      "limit": 1
-    },
-    {
-      "type": "price",
-      "name": "Price",
-      "limit": 1
-    },
-    {
-      "type": "usps",
-      "name": "Image USPS Grid",
-      "limit": 1
-    },
-    {
-      "type": "variant_picker",
-      "name": "Variant/Bundle Picker",
-      "limit": 1
-    },
-    {
-      "type": "campaign",
-      "name": "Campaign Box",
-      "settings": [
-        { "type": "text", "id": "heading", "label": "heading", "default": "Kampagne: 2 betræk med, når du tager 2 puder" },
-        { "type": "text", "id": "subtext", "label": "subtext", "default": "Vælg selv farve til hver side af sengen" }
-      ]
-    },
-    {
-      "type": "shipping_message",
-      "name": "Shipping Message",
-      "settings": [
-        { "type": "number", "id": "cutoff", "label": "Cutoff Hour (24h)", "default": 14 },
-        { "type": "text", "id": "default_text", "label": "default_text", "default": "1-2 hverdages levering" },
-        { "type": "text", "id": "today_text", "label": "today_text", "default": "bestil inden for %t, så sender vi i dag" }
-      ]
-    },
-    {
-      "type": "buy_buttons",
-      "name": "Buy Buttons",
-      "limit": 1,
-      "settings": [
-        { "type": "text", "id": "button_text", "label": "button_text", "default": "Tilføj til kurv" },
-        { "type": "checkbox", "id": "show_secure_text", "label": "show_secure_text", "default": true }
-      ]
-    },
-    {
-      "type": "trust_row",
-      "name": "Trust & Payments",
-      "limit": 1
-    },
-    {
-      "type": "delivery_features",
-      "name": "Delivery Features",
-      "limit": 1
-    },
-    {
-      "type": "review_marquee",
-      "name": "Review Marquee",
-      "limit": 1
-    },
-    {
-      "type": "details_block",
-      "name": "Details Content",
-      "settings": [
-        { "type": "text", "id": "heading", "label": "heading", "default": "Om puden" },
-        { "type": "richtext", "id": "content", "label": "content", "default": "<p>Hushly PerfectPillow er bygget til at gøre din seng til husets roligste sted...</p>" }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Main Product"
-    }
-  ]
-}
-{% endschema %}
+</div>
