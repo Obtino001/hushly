@@ -8,6 +8,256 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "hushly_hero": {
+      "type": "hushly-hero",
+      "settings": {}
+    },
+    "hushly_marquee": {
+      "type": "hushly-marquee",
+      "blocks": {
+        "item_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "100 dages søvngaranti"
+          }
+        },
+        "item_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Fri fragt & retur"
+          }
+        },
+        "item_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Udviklet i Danmark"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ],
+      "settings": {}
+    },
+    "hushly_image_with_features_1": {
+      "type": "hushly-image-with-features",
+      "blocks": {
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Is-silke på den ene side",
+            "text": "Leder varmen væk i stedet for at fange den, så du altid har en kølig side."
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Åndbart fyld",
+            "text": "Selve memory-skummet er revet, hvilket tillader luften at cirkulere frit igennem puden."
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Ingen vendt-pude rutine",
+            "text": "Slut med at vågne for at vende puden. Den holder sig kølig natten igennem."
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3"
+      ],
+      "settings": {
+        "image_position": "left",
+        "heading": "Kølende teknologi.\\nVirkelig."
+      }
+    },
+    "hushly_two_sides": {
+      "type": "hushly-two-sides",
+      "blocks": {
+        "side_1": {
+          "type": "card",
+          "settings": {
+            "title": "Is-silke: Den kølige side",
+            "text": "Designet til de varme nætter – eller hvis du bare foretrækker en kølig pude."
+          }
+        },
+        "side_2": {
+          "type": "card",
+          "settings": {
+            "title": "Bambus: Den bløde side",
+            "text": "Utrolig blød og hyggelig. Perfekt til de lidt køligere nætter."
+          }
+        }
+      },
+      "block_order": [
+        "side_1",
+        "side_2"
+      ],
+      "settings": {}
+    },
+    "hushly_lavender": {
+      "type": "hushly-lavender",
+      "blocks": {
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Naturligt afslappende",
+            "text": "Lavendel er videnskabeligt bevist at sænke pulsen..."
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Aftager aldrig (helt)",
+            "text": "Duften er indkapslet i skummet..."
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Ikke overvældende",
+            "text": "Bare et strejf, der hjælper dig med at finde ro."
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3"
+      ],
+      "settings": {}
+    },
+    "hushly_callout": {
+      "type": "hushly-callout",
+      "settings": {}
+    },
+    "hushly_image_with_features_2": {
+      "type": "hushly-image-with-features",
+      "blocks": {
+        "feat_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Tilpas højden",
+            "text": "Fjern eller tilføj fyld, så puden passer præcis til din nakke og ryg."
+          }
+        },
+        "feat_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Støtter hele natten",
+            "text": "Blandingen af memory foam og microfiber sikrer, at puden ikke falder sammen."
+          }
+        },
+        "feat_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Vågn op uden smerter",
+            "text": "Den rette støtte aflaster nakken og lader dine muskler slappe helt af."
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3"
+      ],
+      "settings": {
+        "image_position": "right",
+        "heading": "Ergonomisk støtte, der holder formen."
+      }
+    },
+    "hushly_ugc_family": {
+      "type": "hushly-ugc-family",
+      "blocks": {
+        "img_1": {
+          "type": "image",
+          "settings": {}
+        },
+        "img_2": {
+          "type": "image",
+          "settings": {}
+        },
+        "img_3": {
+          "type": "image",
+          "settings": {}
+        },
+        "img_4": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "img_1",
+        "img_2",
+        "img_3",
+        "img_4"
+      ],
+      "settings": {}
+    },
+    "hushly_comparison": {
+      "type": "hushly-comparison",
+      "blocks": {
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "title": "Justérbar højde"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "title": "Kølende is-silke betræk"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "title": "Lavendel-infuseret for ro"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "title": "Holder formen hele natten"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "title": "30 dages prøvetid"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5"
+      ],
+      "settings": {}
+    },
+    "hushly_featured_product": {
+      "type": "hushly-featured-product",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hushly_hero",
+    "hushly_marquee",
+    "hushly_image_with_features_1",
+    "hushly_two_sides",
+    "hushly_lavender",
+    "hushly_callout",
+    "hushly_image_with_features_2",
+    "hushly_ugc_family",
+    "hushly_comparison",
+    "hushly_featured_product"
+  ]
 }
